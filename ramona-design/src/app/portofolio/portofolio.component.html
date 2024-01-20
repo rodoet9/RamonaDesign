@@ -1,0 +1,107 @@
+<section id="portofolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Our <span>projects</span></h2>
+      </div>
+    </div>
+    <div class="row">
+      <mat-tab-group>
+        <mat-tab label="Dormitor">
+          <div class="title">Idei <span>Design</span> Dormitor</div>
+          <div class="living-room">
+            <p class="living-room__description">
+              Architecture non lorem ac erat suscipit bibendum. Nulla facilisi.
+              Sedeuter nunc volutpat, mollis sapien vel, conseyer turpeutionyer
+              masin libero sempe. Fusceler mollis augue sit amet hendrerit
+              vestibulum. Duisteyerionyer venenatis lacus.
+            </p>
+            <div class="living-room__info">
+              <ul>
+                <li>Nume proiect: <span>Example</span></li>
+                <li>An executie: <span>2023</span></li>
+                <li>Durata proiect: <span>6 luni</span></li>
+                <li>Client: <span>Nume client</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <ngb-carousel>
+            <ng-template ngbSlide *ngFor="let imageName of imageNames">
+              <div class="picsum-img-wrapper">
+                <img [src]="getImagePath(imageName)" />
+              </div>
+            </ng-template>
+          </ngb-carousel>
+        </mat-tab>
+        <mat-tab label="Bedroom">
+          <div class="title">
+            Living <span>Room</span> Design <span>Ideas</span>
+          </div>
+          <div class="living-room">
+            <p class="living-room__description">
+              Architecture non lorem ac erat suscipit bibendum. Nulla facilisi.
+              Sedeuter nunc volutpat, mollis sapien vel, conseyer turpeutionyer
+              masin libero sempe. Fusceler mollis augue sit amet hendrerit
+              vestibulum. Duisteyerionyer venenatis lacus.
+            </p>
+            <div class="living-room__info">
+              <ul>
+                <li>Project Name: <span>Example</span></li>
+                <li>Year: <span>2023</span></li>
+                <li>Company: <span>Company Name</span></li>
+                <li>Location: <span>Romania</span></li>
+              </ul>
+            </div>
+          </div>
+          <ngb-carousel>
+            <ng-template ngbSlide *ngFor="let imageName of imageNames">
+              <div class="picsum-img-wrapper">
+                <img [src]="getImagePath(imageName)" />
+              </div>
+            </ng-template>
+          </ngb-carousel>
+        </mat-tab>
+        <mat-tab label="Dining Room">
+          <div class="title">
+            Living <span>Room</span> Design <span>Ideas</span>
+          </div>
+          <div class="living-room">
+            <p class="living-room__description">
+              Architecture non lorem ac erat suscipit bibendum. Nulla facilisi.
+              Sedeuter nunc volutpat, mollis sapien vel, conseyer turpeutionyer
+              masin libero sempe. Fusceler mollis augue sit amet hendrerit
+              vestibulum. Duisteyerionyer venenatis lacus.
+            </p>
+            <div class="living-room__info">
+              <ul>
+                <li>Project Name: <span>Example</span></li>
+                <li>Year: <span>2023</span></li>
+                <li>Company: <span>Company Name</span></li>
+                <li>Location: <span>Romania</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <img
+            *ngFor="let imageName of imageNames"
+            [src]="getImagePath(imageName)"
+          />
+
+          <img
+            src="../../assets/Dormitor/Room 2- Bold Colors and Geometry_Unnamed Space-29.jpeg"
+          />
+          <img
+            src="../../assets/Dormitor/Room 2- Bold Colors and Geometry_Unnamed Space-30.jpeg"
+          />
+          <img
+            src="../../assets/Dormitor/Room 2- Bold Colors and Geometry_Unnamed Space-31.jpeg"
+          />
+          <img
+            src="../../assets/Dormitor/Room 2- Bold Colors and Geometry_Unnamed Space-32.jpeg"
+          />
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</section>

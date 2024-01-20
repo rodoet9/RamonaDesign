@@ -1,13 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { MatTabsModule } from '@angular/material/tabs';
-
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
@@ -19,10 +16,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgIf } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
-
 import { RouterModule, Routes } from '@angular/router';
-import { ProjectComponent } from './portofolio/project/project.component';
-
 import { MatDialogModule } from '@angular/material/dialog';
 import { ContactPageComponent } from './contact/contact-page/contact-page.component';
 
@@ -35,7 +29,6 @@ import { ContactPageComponent } from './contact/contact-page/contact-page.compon
     ContactComponent,
     HeaderComponent,
     FooterComponent,
-    ProjectComponent,
     ContactPageComponent,
   ],
   imports: [
