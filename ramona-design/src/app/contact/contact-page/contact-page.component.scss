@@ -1,0 +1,161 @@
+@import "../../../stylesheets/anchor-reset.scss";
+@import "../../../stylesheets/reset.scss";
+
+#contact-page {
+  margin-top: 32px;
+}
+
+.container {
+  .row {
+    .col-md-12 {
+      h2 {
+        font-size: 40px;
+        font-weight: 400;
+        color: #272727;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        word-spacing: 5px;
+        margin-bottom: 36px;
+
+        span {
+          color: #b19777;
+        }
+      }
+    }
+  }
+  .contact-info {
+    box-shadow: 3px 3px 5px #b197778b;
+    padding: 2px 16px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    h3 {
+      font-size: 24px;
+      font-weight: 400;
+      color: #272727;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      word-spacing: 2px;
+
+      span {
+        color: #b19777;
+      }
+
+      img {
+        width: 36px;
+        height: 36px;
+        margin-left: 12px;
+      }
+    }
+
+    p {
+      text-align: justify;
+      font-size: 18px;
+
+      a {
+        @include anchor-reset;
+        color: #b19777;
+        font-weight: 600;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .working-hours {
+    box-shadow: 3px 3px 5px #b197778b;
+    padding: 2px 16px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+
+    h3 {
+      font-size: 24px;
+      font-weight: 400;
+      color: #272727;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      word-spacing: 2px;
+
+      span {
+        color: #b19777;
+      }
+
+      img {
+        width: 36px;
+        height: 36px;
+        margin-left: 12px;
+      }
+    }
+    p {
+      text-align: justify;
+      font-size: 18px;
+
+      span {
+        color: #b19777;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .social-media {
+    box-shadow: 3px 3px 5px #b197778b;
+    padding: 2px 16px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+
+    h3 {
+      font-size: 24px;
+      font-weight: 400;
+      color: #272727;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      word-spacing: 2px;
+
+      span {
+        color: #b19777;
+      }
+
+      img {
+        width: 36px;
+        height: 36px;
+        margin-left: 12px;
+      }
+    }
+
+    ul {
+      @include reset-list;
+      display: flex;
+
+      li {
+        font-size: 16px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        span {
+          color: #b19777;
+        }
+        a {
+          @include anchor-reset;
+
+          svg:hover {
+            fill: #b19777;
+          }
+        }
+        a:hover {
+          color: #b19777;
+          text-decoration: underline;
+        }
+      }
+    }
+    p {
+      text-align: justify;
+      font-size: 18px;
+
+      span {
+        color: #b19777;
+        font-weight: 600;
+      }
+    }
+  }
+}
