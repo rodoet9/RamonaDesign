@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class HomeComponent {
 	pauseOnHover = true;
 
-	imagesFolderPath = '../../assets/homeCarousel/';
+	imagesFolderPath = '../assets/homeCarousel/';
 
 	imageNames = ['img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg', 'img6.jpg', 'img7.jpg'];
 
