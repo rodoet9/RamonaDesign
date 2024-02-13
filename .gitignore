@@ -131,3 +131,6 @@ dist
 
 #angular cache
 .angular/cache/
+
+#mac file
+.DS_Store

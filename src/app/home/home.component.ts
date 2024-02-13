@@ -1,20 +1,20 @@
-import { Component } from "@angular/core";
-import { NgbCarouselModule } from "@ng-bootstrap/ng-bootstrap";
+import { Component } from '@angular/core';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: "app-home",
-  templateUrl: "./home.component.html",
-  styleUrls: ["./home.component.scss"],
+	selector: 'app-home',
+	templateUrl: './home.component.html',
+	styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
-  pauseOnHover = true;
+	pauseOnHover = true;
 
-  imagesFolderPath = "../../assets/DormitorCompressed/";
+	imagesFolderPath = '../../assets/homeCarousel/';
 
-  imageNames = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"];
+	imageNames = ['img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg', 'img6.jpg', 'img7.jpg'];
 
-  getImagePath(imageName: string): string {
-    const imagePath = this.imagesFolderPath + imageName;
-    return imagePath;
-  }
+	getImagePath(imageName: string): string {
+		const imagePath = this.imagesFolderPath + imageName;
+		return imagePath;
+	}
 }
