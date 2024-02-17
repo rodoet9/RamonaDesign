@@ -19,6 +19,9 @@ import { MatCardModule } from '@angular/material/card';
 import { RouterModule, Routes } from '@angular/router';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ContactPageComponent } from './contact/contact-page/contact-page.component';
+import { StandardDetailsComponent } from './services/standard-details/standard-details.component';
+import { PremiumDetailsComponent } from './services/premium-details/premium-details.component';
+import { UltraDetailsComponent } from './services/ultra-details/ultra-details.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +33,9 @@ import { ContactPageComponent } from './contact/contact-page/contact-page.compon
     HeaderComponent,
     FooterComponent,
     ContactPageComponent,
+    StandardDetailsComponent,
+    PremiumDetailsComponent,
+    UltraDetailsComponent,
   ],
   imports: [
     MatTabsModule,
