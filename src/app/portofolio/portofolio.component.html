@@ -1,107 +1,119 @@
 <section id="portofolio">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2>Our <span>projects</span></h2>
-      </div>
-    </div>
-    <div class="row">
-      <mat-tab-group>
-        <mat-tab label="Dormitor">
-          <div class="title">Idei <span>Design</span> Dormitor</div>
-          <div class="living-room">
-            <p class="living-room__description">
-              Architecture non lorem ac erat suscipit bibendum. Nulla facilisi.
-              Sedeuter nunc volutpat, mollis sapien vel, conseyer turpeutionyer
-              masin libero sempe. Fusceler mollis augue sit amet hendrerit
-              vestibulum. Duisteyerionyer venenatis lacus.
-            </p>
-            <div class="living-room__info">
-              <ul>
-                <li>Nume proiect: <span>Example</span></li>
-                <li>An executie: <span>2023</span></li>
-                <li>Durata proiect: <span>6 luni</span></li>
-                <li>Client: <span>Nume client</span></li>
-              </ul>
-            </div>
-          </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Our <span>projects</span></h2>
+			</div>
+		</div>
+		<div class="row">
+			<mat-tab-group>
+				<mat-tab label="Dormitor">
+					<div class="title">Idei <span>Design</span> Dormitor</div>
+					<!-- <div class="living-room">
+						<p class="living-room__description">
+							Architecture non lorem ac erat suscipit bibendum. Nulla facilisi. Sedeuter nunc volutpat, mollis
+							sapien vel, conseyer turpeutionyer masin libero sempe. Fusceler mollis augue sit amet hendrerit
+							vestibulum. Duisteyerionyer venenatis lacus.
+						</p>
+						<div class="living-room__info">
+							<ul>
+								<li>Nume proiect: <span>Example</span></li>
+								<li>An executie: <span>2023</span></li>
+								<li>Durata proiect: <span>6 luni</span></li>
+								<li>Client: <span>Nume client</span></li>
+							</ul>
+						</div>
+					</div> -->
 
-          <ngb-carousel>
-            <ng-template ngbSlide *ngFor="let imageName of imageNames">
-              <div class="picsum-img-wrapper">
-                <img [src]="getImagePath(imageName)" />
-              </div>
-            </ng-template>
-          </ngb-carousel>
-        </mat-tab>
-        <mat-tab label="Bedroom">
-          <div class="title">
-            Living <span>Room</span> Design <span>Ideas</span>
-          </div>
-          <div class="living-room">
-            <p class="living-room__description">
-              Architecture non lorem ac erat suscipit bibendum. Nulla facilisi.
-              Sedeuter nunc volutpat, mollis sapien vel, conseyer turpeutionyer
-              masin libero sempe. Fusceler mollis augue sit amet hendrerit
-              vestibulum. Duisteyerionyer venenatis lacus.
-            </p>
-            <div class="living-room__info">
-              <ul>
-                <li>Project Name: <span>Example</span></li>
-                <li>Year: <span>2023</span></li>
-                <li>Company: <span>Company Name</span></li>
-                <li>Location: <span>Romania</span></li>
-              </ul>
-            </div>
-          </div>
-          <ngb-carousel>
-            <ng-template ngbSlide *ngFor="let imageName of imageNames">
-              <div class="picsum-img-wrapper">
-                <img [src]="getImagePath(imageName)" />
-              </div>
-            </ng-template>
-          </ngb-carousel>
-        </mat-tab>
-        <mat-tab label="Dining Room">
-          <div class="title">
-            Living <span>Room</span> Design <span>Ideas</span>
-          </div>
-          <div class="living-room">
-            <p class="living-room__description">
-              Architecture non lorem ac erat suscipit bibendum. Nulla facilisi.
-              Sedeuter nunc volutpat, mollis sapien vel, conseyer turpeutionyer
-              masin libero sempe. Fusceler mollis augue sit amet hendrerit
-              vestibulum. Duisteyerionyer venenatis lacus.
-            </p>
-            <div class="living-room__info">
-              <ul>
-                <li>Project Name: <span>Example</span></li>
-                <li>Year: <span>2023</span></li>
-                <li>Company: <span>Company Name</span></li>
-                <li>Location: <span>Romania</span></li>
-              </ul>
-            </div>
-          </div>
-
-          <img
-            *ngFor="let imageName of imageNames"
-            [src]="getImagePath(imageName)"
-          />
-
-          <img
-            src="../../assets/Dormitor/Room 2- Bold Colors and Geometry_Unnamed Space-29.jpeg"
-          />
-          <img
-            src="../../assets/Dormitor/Room 2- Bold Colors and Geometry_Unnamed Space-30.jpeg"
-          />
-          <img
-            src="../../assets/Dormitor/Room 2- Bold Colors and Geometry_Unnamed Space-31.jpeg"
-          />
-          <img
-            src="../../assets/Dormitor/Room 2- Bold Colors and Geometry_Unnamed Space-32.jpeg"
-          />
-        </mat-tab>
-      </mat-tab-group>
-    </div>
-  </div>
+					<ngb-carousel [interval]="4000">
+						<ng-template ngbSlide *ngFor="let dormitorImg of dormitorImgs">
+							<div class="picsum-img-wrapper">
+								<img [src]="getDormitorImgs(dormitorImg)" />
+							</div>
+						</ng-template>
+					</ngb-carousel>
+				</mat-tab>
+				<mat-tab label="Restaurant">
+					<div class="title">Idei <span>Design</span> Restaurant</div>
+					<ngb-carousel [interval]="4000">
+						<ng-template ngbSlide *ngFor="let restaurantImg of restaurantImgs">
+							<div class="picsum-img-wrapper">
+								<img [src]="getRestaurantImgs(restaurantImg)" />
+							</div>
+						</ng-template>
+					</ngb-carousel>
+				</mat-tab>
+				<mat-tab label="Bunica">
+					<div class="title">Idei <span>Design</span> Bunica</div>
+					<ngb-carousel [interval]="4000">
+						<ng-template ngbSlide *ngFor="let bunicaImg of bunicaImgs">
+							<div class="picsum-img-wrapper">
+								<img [src]="getBunicaImgs(bunicaImg)" />
+							</div>
+						</ng-template>
+					</ngb-carousel>
+				</mat-tab>
+				<mat-tab label="Cabana">
+					<div class="title">Idei <span>Design</span> Cabana</div>
+					<ngb-carousel [interval]="4000">
+						<ng-template ngbSlide *ngFor="let cabanaImg of cabanaImgs">
+							<div class="picsum-img-wrapper">
+								<img [src]="getCabanaImgs(cabanaImg)" />
+							</div>
+						</ng-template>
+					</ngb-carousel>
+				</mat-tab>
+				<mat-tab label="Green House">
+					<div class="title">Idei <span>Design</span> Green <span>House</span></div>
+					<ngb-carousel [interval]="4000">
+						<ng-template ngbSlide *ngFor="let greenImg of greenImgs">
+							<div class="picsum-img-wrapper">
+								<img [src]="getGreenImgs(greenImg)" />
+							</div>
+						</ng-template>
+					</ngb-carousel>
+				</mat-tab>
+				<mat-tab label="Mansarda">
+					<div class="title">Idei <span>Design</span> Mansarda</div>
+					<ngb-carousel [interval]="4000">
+						<ng-template ngbSlide *ngFor="let mansardaImg of mansardaImgs">
+							<div class="picsum-img-wrapper">
+								<img [src]="getMansardaImgs(mansardaImg)" />
+							</div>
+						</ng-template>
+					</ngb-carousel>
+				</mat-tab>
+				<mat-tab label="Apartament">
+					<div class="title">Idei <span>Design</span> Apartament</div>
+					<ngb-carousel [interval]="4000">
+						<ng-template ngbSlide *ngFor="let mogosoaiaImg of mogosoaiaImgs">
+							<div class="picsum-img-wrapper">
+								<img [src]="getMogosoaiaImgs(mogosoaiaImg)" />
+							</div>
+						</ng-template>
+					</ngb-carousel>
+				</mat-tab>
+				<mat-tab label="Office">
+					<div class="title">Idei <span>Design</span> Office</div>
+					<ngb-carousel [interval]="4000">
+						<ng-template ngbSlide *ngFor="let officeImg of officeImgs">
+							<div class="picsum-img-wrapper">
+								<img [src]="getOfficeImgs(officeImg)" />
+							</div>
+						</ng-template>
+					</ngb-carousel>
+				</mat-tab>
+				<mat-tab label="Red House">
+					<div class="title">Idei <span>Design</span> Red <span>House</span></div>
+					<ngb-carousel [interval]="4000">
+						<ng-template ngbSlide *ngFor="let redImg of redImgs">
+							<div class="picsum-img-wrapper">
+								<img [src]="getRedImgs(redImg)" />
+							</div>
+						</ng-template>
+					</ngb-carousel>
+				</mat-tab>
+			</mat-tab-group>
+		</div>
+	</div>
 </section>

@@ -6,30 +6,30 @@ import { PortofolioComponent } from './portofolio/portofolio.component';
 import { ContactPageComponent } from './contact/contact-page/contact-page.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: HomeComponent,
-    title: 'Home page',
-  },
-  {
-    path: 'services',
-    component: ServicesComponent,
-    title: 'Services page',
-  },
-  {
-    path: 'portofolio',
-    component: PortofolioComponent,
-    title: 'Portofolio page',
-  },
-  {
-    path: 'contact',
-    component: ContactPageComponent,
-    title: 'Contact Us Page',
-  },
+	{
+		path: '',
+		component: HomeComponent,
+		title: 'Acasa',
+	},
+	{
+		path: 'services',
+		component: ServicesComponent,
+		title: 'Servicii',
+	},
+	{
+		path: 'portofolio',
+		component: PortofolioComponent,
+		title: 'Portofoliu',
+	},
+	{
+		path: 'contact',
+		component: ContactPageComponent,
+		title: 'Contacteaza-ne',
+	},
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
+	imports: [RouterModule.forRoot(routes)],
+	exports: [RouterModule],
 })
 export class AppRoutingModule {}
