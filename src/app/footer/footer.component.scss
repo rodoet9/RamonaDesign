@@ -1,12 +1,22 @@
+@import '../../stylesheets/anchor-reset.scss';
+
 #footer {
-  margin-top: 50px;
-  .container {
-    border-top: 1px solid #b1977763;
-    .row {
-      .col-md-12 {
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-    }
-  }
+	margin-top: 50px;
+	.container {
+		border-top: 1px solid #b1977763;
+		.row {
+			.col-md-12 {
+				margin-top: 20px;
+				margin-bottom: 20px;
+
+				a {
+					@include anchor-reset;
+				}
+				a:hover {
+					color: #b19777;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
 }

@@ -22,6 +22,8 @@ import { ContactPageComponent } from './contact/contact-page/contact-page.compon
 import { StandardDetailsComponent } from './services/standard-details/standard-details.component';
 import { PremiumDetailsComponent } from './services/premium-details/premium-details.component';
 import { UltraDetailsComponent } from './services/ultra-details/ultra-details.component';
+import { NewDesignComponent } from './portofolio/new-design/new-design.component';
+import { DormitorComponent } from './portofolio/dormitor/dormitor.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { UltraDetailsComponent } from './services/ultra-details/ultra-details.co
     StandardDetailsComponent,
     PremiumDetailsComponent,
     UltraDetailsComponent,
+    NewDesignComponent,
+    DormitorComponent,
   ],
   imports: [
     MatTabsModule,
