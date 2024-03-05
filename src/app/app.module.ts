@@ -22,41 +22,41 @@ import { ContactPageComponent } from './contact/contact-page/contact-page.compon
 import { StandardDetailsComponent } from './services/standard-details/standard-details.component';
 import { PremiumDetailsComponent } from './services/premium-details/premium-details.component';
 import { UltraDetailsComponent } from './services/ultra-details/ultra-details.component';
-import { NewDesignComponent } from './portofolio/new-design/new-design.component';
-import { DormitorComponent } from './portofolio/dormitor/dormitor.component';
+// import { NewDesignComponent } from './portofolio/new-design/new-design.component';
+// import { DormitorComponent } from './portofolio/dormitor/dormitor.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    ServicesComponent,
-    PortofolioComponent,
-    ContactComponent,
-    HeaderComponent,
-    FooterComponent,
-    ContactPageComponent,
-    StandardDetailsComponent,
-    PremiumDetailsComponent,
-    UltraDetailsComponent,
-    NewDesignComponent,
-    DormitorComponent,
-  ],
-  imports: [
-    MatTabsModule,
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule,
-    BrowserAnimationsModule,
-    MatSlideToggleModule,
-    MatButtonModule,
-    MatDividerModule,
-    NgbCarouselModule,
-    NgIf,
-    MatCardModule,
-    MatDialogModule,
-    RouterModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
+	declarations: [
+		AppComponent,
+		HomeComponent,
+		ServicesComponent,
+		PortofolioComponent,
+		ContactComponent,
+		HeaderComponent,
+		FooterComponent,
+		ContactPageComponent,
+		StandardDetailsComponent,
+		PremiumDetailsComponent,
+		UltraDetailsComponent,
+		// NewDesignComponent,
+		// DormitorComponent,
+	],
+	imports: [
+		MatTabsModule,
+		BrowserModule,
+		AppRoutingModule,
+		NgbModule,
+		BrowserAnimationsModule,
+		MatSlideToggleModule,
+		MatButtonModule,
+		MatDividerModule,
+		NgbCarouselModule,
+		NgIf,
+		MatCardModule,
+		MatDialogModule,
+		RouterModule,
+	],
+	providers: [],
+	bootstrap: [AppComponent],
 })
 export class AppModule {}

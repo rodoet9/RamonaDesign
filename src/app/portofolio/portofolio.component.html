@@ -2,37 +2,21 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h2>Our <span>projects</span></h2>
+				<h2>Proiectele <span>noastre</span></h2>
 			</div>
 		</div>
 		<div class="row">
 			<mat-tab-group>
-				<mat-tab label="Dormitor">
+				<!-- <mat-tab label="New Design">
+					<div class="title">Idei <span>Design</span> placeholder</div>
+					<button (click)="goToNew()">Proiect 1</button>
+					<router-outlet></router-outlet>
+				</mat-tab> -->
+				<!-- <mat-tab label="Dormitor">
 					<div class="title">Idei <span>Design</span> Dormitor</div>
-					<!-- <div class="living-room">
-						<p class="living-room__description">
-							Architecture non lorem ac erat suscipit bibendum. Nulla facilisi. Sedeuter nunc volutpat, mollis
-							sapien vel, conseyer turpeutionyer masin libero sempe. Fusceler mollis augue sit amet hendrerit
-							vestibulum. Duisteyerionyer venenatis lacus.
-						</p>
-						<div class="living-room__info">
-							<ul>
-								<li>Nume proiect: <span>Example</span></li>
-								<li>An executie: <span>2023</span></li>
-								<li>Durata proiect: <span>6 luni</span></li>
-								<li>Client: <span>Nume client</span></li>
-							</ul>
-						</div>
-					</div> -->
-
-					<ngb-carousel [interval]="4000">
-						<ng-template ngbSlide *ngFor="let dormitorImg of dormitorImgs">
-							<div class="picsum-img-wrapper">
-								<img [src]="getDormitorImgs(dormitorImg)" />
-							</div>
-						</ng-template>
-					</ngb-carousel>
-				</mat-tab>
+					<button (click)="goToDormitorOne()">Dormitor 1</button>
+					<router-outlet></router-outlet>
+				</mat-tab> -->
 				<mat-tab label="Restaurant">
 					<div class="title">Idei <span>Design</span> Restaurant</div>
 					<ngb-carousel [interval]="4000">
