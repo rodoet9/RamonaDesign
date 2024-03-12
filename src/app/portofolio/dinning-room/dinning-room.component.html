@@ -1,0 +1,34 @@
+<section>
+	<div class="container">
+		<div class="row" *ngIf="!showContent">
+			<div class="row">
+				<div class="col-12">
+					<h2>Idei de design pentru dinning area</h2>
+				</div>
+			</div>
+			<div class="col-6">
+				<a (click)="showDinningRoomOne('dinning-room-one')">
+					<img src="../../../assets/DinningRoom/D1/DinningRoom1-1.jpeg" />
+				</a>
+			</div>
+			<div class="col-6">
+				<a (click)="showDinningRoomTwo('dinning-room-two')">
+					<img src="../../../assets/DinningRoom/D2/DinningRoom2-1.jpeg" />
+				</a>
+			</div>
+		</div>
+
+		<div *ngIf="showContent">
+			<div class="row">
+				<div class="col-12">
+					<span (click)="hideContent()">Inapoi la idei de dinning area </span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<router-outlet></router-outlet>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

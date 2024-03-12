@@ -1,0 +1,33 @@
+<section>
+	<div class="container">
+		<div class="row" *ngIf="!showContent">
+			<div class="row">
+				<div class="col-12">
+					<h2>Idei de design pentru bucatarie</h2>
+				</div>
+			</div>
+			<div class="col-6">
+				<a (click)="showBucatarieOne('bucatarie-one')">
+					<img src="../../../assets/Bucatarie/B1/Bucatarie1-1.jpeg" />
+				</a>
+			</div>
+			<div class="col-6">
+				<a (click)="showBucatarieTwo('bucatarie-two')">
+					<img src="../../../assets/Bucatarie/B2/Bucatarie2-1.jpeg" />
+				</a>
+			</div>
+		</div>
+		<div *ngIf="showContent">
+			<div class="row">
+				<div class="col-12">
+					<span (click)="hideContent()">Inapoi la idei de bucatarii</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<router-outlet></router-outlet>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

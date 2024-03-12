@@ -22,8 +22,26 @@ import { ContactPageComponent } from './contact/contact-page/contact-page.compon
 import { StandardDetailsComponent } from './services/standard-details/standard-details.component';
 import { PremiumDetailsComponent } from './services/premium-details/premium-details.component';
 import { UltraDetailsComponent } from './services/ultra-details/ultra-details.component';
-// import { NewDesignComponent } from './portofolio/new-design/new-design.component';
-// import { DormitorComponent } from './portofolio/dormitor/dormitor.component';
+import { DormitorComponent } from './portofolio/dormitor/dormitor.component';
+import { BaieComponent } from './portofolio/baie/baie.component';
+import { BirouComponent } from './portofolio/birou/birou.component';
+import { BucatarieComponent } from './portofolio/bucatarie/bucatarie.component';
+import { DinningRoomComponent } from './portofolio/dinning-room/dinning-room.component';
+import { LivingComponent } from './portofolio/living/living.component';
+import { TerasaComponent } from './portofolio/terasa/terasa.component';
+import { DormitorOneComponent } from './portofolio/dormitor/dormitor-one/dormitor-one.component';
+import { DormitorTwoComponent } from './portofolio/dormitor/dormitor-two/dormitor-two.component';
+import { DormitorThreeComponent } from './portofolio/dormitor/dormitor-three/dormitor-three.component';
+import { BaieOneComponent } from './portofolio/baie/baie-one/baie-one.component';
+import { BaieTwoComponent } from './portofolio/baie/baie-two/baie-two.component';
+import { BirouOneComponent } from './portofolio/birou/birou-one/birou-one.component';
+import { BucatarieOneComponent } from './portofolio/bucatarie/bucatarie-one/bucatarie-one.component';
+import { BucatarieTwoComponent } from './portofolio/bucatarie/bucatarie-two/bucatarie-two.component';
+import { DinningRoomOneComponent } from './portofolio/dinning-room/dinning-room-one/dinning-room-one.component';
+import { DinningRoomTwoComponent } from './portofolio/dinning-room/dinning-room-two/dinning-room-two.component';
+import { LivingOneComponent } from './portofolio/living/living-one/living-one.component';
+import { LivingTwoComponent } from './portofolio/living/living-two/living-two.component';
+import { TerasaOneComponent } from './portofolio/terasa/terasa-one/terasa-one.component';
 
 @NgModule({
 	declarations: [
@@ -38,8 +56,26 @@ import { UltraDetailsComponent } from './services/ultra-details/ultra-details.co
 		StandardDetailsComponent,
 		PremiumDetailsComponent,
 		UltraDetailsComponent,
-		// NewDesignComponent,
-		// DormitorComponent,
+		DormitorComponent,
+  BaieComponent,
+  BirouComponent,
+  BucatarieComponent,
+  DinningRoomComponent,
+  LivingComponent,
+  TerasaComponent,
+  DormitorOneComponent,
+  DormitorTwoComponent,
+  DormitorThreeComponent,
+  BaieOneComponent,
+  BaieTwoComponent,
+  BirouOneComponent,
+  BucatarieOneComponent,
+  BucatarieTwoComponent,
+  DinningRoomOneComponent,
+  DinningRoomTwoComponent,
+  LivingOneComponent,
+  LivingTwoComponent,
+  TerasaOneComponent,
 	],
 	imports: [
 		MatTabsModule,

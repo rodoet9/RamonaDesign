@@ -1,0 +1,43 @@
+<section>
+	<div class="container">
+		<div class="row" *ngIf="!showContent">
+			<div class="row">
+				<div class="col-12">
+					<h2>Idei de design pentru dormitor</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6">
+					<a (click)="showDormitorOne('dormitor-one')">
+						<img src="../../../assets/Dormitor/D1/Dormitor1-1.jpeg" />
+					</a>
+				</div>
+				<div class="col-6">
+					<a (click)="showDormitorTwo('dormitor-two')">
+						<img src="../../../assets/Dormitor/D2/Dormitor2-2.jpeg" />
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6">
+					<a (click)="showDormitorThree('dormitor-three')">
+						<img src="../../../assets/Dormitor/D3/Dormitor3-1.jpeg" />
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div *ngIf="showContent">
+			<div class="row">
+				<div class="col-12">
+					<span (click)="hideContent()">Inapoi la idei de dormitoare</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<router-outlet></router-outlet>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

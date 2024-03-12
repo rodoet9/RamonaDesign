@@ -1,0 +1,24 @@
+<section>
+	<div class="container">
+		<div class="row" *ngIf="!showContent">
+			<div class="row">
+				<div class="col-12">
+					<h2>Idei de design pentru birou</h2>
+				</div>
+			</div>
+			<div class="col-6">
+				<a (click)="showBirouOne('birou-one')">
+					<img src="../../../assets/Birou/B1/Birou1-1.jpeg" />
+				</a>
+			</div>
+		</div>
+		<div class="row" *ngIf="showContent">
+			<div class="col-12">
+				<span (click)="hideContent()">Inapoi la idei de birouri</span>
+			</div>
+			<div class="col-12">
+				<router-outlet></router-outlet>
+			</div>
+		</div>
+	</div>
+</section>

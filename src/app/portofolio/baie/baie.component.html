@@ -1,0 +1,34 @@
+<section>
+	<div class="container">
+		<div class="row" *ngIf="!showContent">
+			<div class="row">
+				<div class="col-12">
+					<h2>Idei de design pentru baie</h2>
+				</div>
+			</div>
+			<div class="col-6">
+				<a (click)="showBaieOne('baie-one')">
+					<img src="../../../assets/Baie/B1/Baie1-2.jpeg" />
+				</a>
+			</div>
+			<div class="col-6">
+				<a (click)="showBaieTwo('baie-two')">
+					<img src="../../../assets/Baie/B2/Baie2-2.jpeg" />
+				</a>
+			</div>
+		</div>
+
+		<div class="row" *ngIf="showContent">
+			<div class="row">
+				<div class="col-12">
+					<span (click)="hideContent()">Inapoi la idei de bai</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<router-outlet></router-outlet>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

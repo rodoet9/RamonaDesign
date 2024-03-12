@@ -16,10 +16,6 @@
 			background-color: #b197771c;
 			padding: 8px;
 			border-radius: 4px;
-
-			span {
-				color: #b19777;
-			}
 		}
 	}
 
@@ -27,11 +23,6 @@
 		font-size: 32px;
 		font-weight: 400;
 		color: #272727;
-
-		span {
-			color: #b19777;
-			text-transform: uppercase;
-		}
 	}
 
 	&__list {
@@ -53,10 +44,6 @@
 				margin-bottom: 4px;
 				color: #272727;
 				letter-spacing: 2px;
-
-				span {
-					color: #b19777;
-				}
 			}
 
 			&__details {
