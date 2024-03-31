@@ -42,6 +42,23 @@ import { DinningRoomTwoComponent } from './portofolio/dinning-room/dinning-room-
 import { LivingOneComponent } from './portofolio/living/living-one/living-one.component';
 import { LivingTwoComponent } from './portofolio/living/living-two/living-two.component';
 import { TerasaOneComponent } from './portofolio/terasa/terasa-one/terasa-one.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MdbAccordionModule } from 'mdb-angular-ui-kit/accordion';
+import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
+import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
+import { MdbCollapseModule } from 'mdb-angular-ui-kit/collapse';
+import { MdbDropdownModule } from 'mdb-angular-ui-kit/dropdown';
+import { MdbFormsModule } from 'mdb-angular-ui-kit/forms';
+import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
+import { MdbPopoverModule } from 'mdb-angular-ui-kit/popover';
+import { MdbRadioModule } from 'mdb-angular-ui-kit/radio';
+import { MdbRangeModule } from 'mdb-angular-ui-kit/range';
+import { MdbRippleModule } from 'mdb-angular-ui-kit/ripple';
+import { MdbScrollspyModule } from 'mdb-angular-ui-kit/scrollspy';
+import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
+import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
+import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 
 @NgModule({
 	declarations: [
@@ -57,25 +74,25 @@ import { TerasaOneComponent } from './portofolio/terasa/terasa-one/terasa-one.co
 		PremiumDetailsComponent,
 		UltraDetailsComponent,
 		DormitorComponent,
-  BaieComponent,
-  BirouComponent,
-  BucatarieComponent,
-  DinningRoomComponent,
-  LivingComponent,
-  TerasaComponent,
-  DormitorOneComponent,
-  DormitorTwoComponent,
-  DormitorThreeComponent,
-  BaieOneComponent,
-  BaieTwoComponent,
-  BirouOneComponent,
-  BucatarieOneComponent,
-  BucatarieTwoComponent,
-  DinningRoomOneComponent,
-  DinningRoomTwoComponent,
-  LivingOneComponent,
-  LivingTwoComponent,
-  TerasaOneComponent,
+		BaieComponent,
+		BirouComponent,
+		BucatarieComponent,
+		DinningRoomComponent,
+		LivingComponent,
+		TerasaComponent,
+		DormitorOneComponent,
+		DormitorTwoComponent,
+		DormitorThreeComponent,
+		BaieOneComponent,
+		BaieTwoComponent,
+		BirouOneComponent,
+		BucatarieOneComponent,
+		BucatarieTwoComponent,
+		DinningRoomOneComponent,
+		DinningRoomTwoComponent,
+		LivingOneComponent,
+		LivingTwoComponent,
+		TerasaOneComponent,
 	],
 	imports: [
 		MatTabsModule,
@@ -91,6 +108,23 @@ import { TerasaOneComponent } from './portofolio/terasa/terasa-one/terasa-one.co
 		MatCardModule,
 		MatDialogModule,
 		RouterModule,
+		MatToolbarModule,
+		MatIconModule,
+		MdbAccordionModule,
+		MdbCarouselModule,
+		MdbCheckboxModule,
+		MdbCollapseModule,
+		MdbDropdownModule,
+		MdbFormsModule,
+		MdbModalModule,
+		MdbPopoverModule,
+		MdbRadioModule,
+		MdbRangeModule,
+		MdbRippleModule,
+		MdbScrollspyModule,
+		MdbTabsModule,
+		MdbTooltipModule,
+		MdbValidationModule,
 	],
 	providers: [],
 	bootstrap: [AppComponent],

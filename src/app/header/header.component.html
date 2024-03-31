@@ -3,11 +3,39 @@
 		<img src="../../assets/zoomed-in-logo-patrat-removebg-2.png" alt="RDesign Website Logo" routerLink="" />
 	</div>
 	<div class="navbtns">
-		<ul>
+		<ul class="menu">
 			<li><a routerLink="">Acasa</a></li>
 			<li><a routerLink="/services">Servicii</a></li>
 			<li><a routerLink="/portofolio">Portofoliu</a></li>
 			<li><a routerLink="/contact">Contact</a></li>
 		</ul>
+	</div>
+	<div class="mobile-burger-menu">
+		<nav class="navbar-class">
+			<div class="container-fluid">
+				<button
+					class="navbar-toggler ms-auto"
+					type="button"
+					(click)="externalContent2.toggle()"
+					aria-controls="navbarToggleExternalContent2"
+					[attr.aria-expanded]="!externalContent2.collapsed"
+					aria-label="Toggle navigation"
+				>
+					<div class="animated-icon2" [ngClass]="{ open: !externalContent2.collapsed }">
+						<span></span><span></span><span></span><span></span>
+					</div>
+				</button>
+			</div>
+		</nav>
+		<div class="collapse" id="navbarToggleExternalContent2" mdbCollapse #externalContent2="mdbCollapse">
+			<div class="collapsedbtns">
+				<ul class="menu">
+					<li><a routerLink="">Acasa</a></li>
+					<li><a routerLink="/services">Servicii</a></li>
+					<li><a routerLink="/portofolio">Portofoliu</a></li>
+					<li><a routerLink="/contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
 	</div>
 </nav>
