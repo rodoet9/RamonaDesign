@@ -17,20 +17,18 @@ export class ServicesComponent {
 		switch (componentDetails) {
 			case 'standard':
 				dialogRef = this.dialog.open(StandardDetailsComponent, {
-					width: '50%',
+					width: '700px',
 				});
 				break;
 			case 'premium':
 				dialogRef = this.dialog.open(PremiumDetailsComponent, {
-					width: '50%',
-					height: '80%',
+					width: '700px',
 					autoFocus: false,
 				});
 				break;
 			case 'ultra':
 				dialogRef = this.dialog.open(UltraDetailsComponent, {
-					width: '50%',
-					height: '80%',
+					width: '700px',
 					autoFocus: false,
 				});
 				break;

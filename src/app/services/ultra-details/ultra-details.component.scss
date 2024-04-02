@@ -1,60 +1,22 @@
 @import '../../../stylesheets/reset.scss';
 
-.ultra-section {
-	padding: 32px;
+h3 {
+	font-size: 20px;
+	font-weight: 400;
+	color: #272727;
+	letter-spacing: 3px;
+	word-spacing: 2px;
+	margin: 0;
+}
 
-	&__header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+p {
+	color: #272727;
+	border-bottom: 1.5px solid #b197776a;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 12px 0;
 
-		.price {
-			font-size: 28px;
-			font-weight: 400;
-			color: #272727;
-			margin-bottom: 12px;
-			background-color: #b197771c;
-			padding: 8px;
-			border-radius: 4px;
-		}
-	}
-
-	&__title {
-		font-size: 32px;
-		font-weight: 400;
-		color: #272727;
-	}
-
-	&__list {
-		@include reset-list;
-
-		.ultra-section-items {
-			border-bottom: 1.5px solid #b197776a;
-			font-size: 16px;
-			font-weight: 400;
-			padding: 12px 0;
-
-			&:last-child {
-				border-bottom: none;
-			}
-
-			&__title {
-				font-size: 20px;
-				font-weight: 400;
-				margin-bottom: 4px;
-				color: #272727;
-				letter-spacing: 2px;
-			}
-
-			&__details {
-				text-align: justify;
-				margin-bottom: 0;
-			}
-		}
-	}
-
-	&__footer {
-		display: flex;
-		justify-content: flex-end;
+	&:last-child {
+		border-bottom: none;
 	}
 }

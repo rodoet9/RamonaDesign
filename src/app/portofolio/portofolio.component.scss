@@ -9,13 +9,10 @@
 			.col-12 {
 				margin-bottom: 16px;
 				h2 {
-					font-size: 40px;
 					font-weight: 400;
 					color: #272727;
 					text-transform: uppercase;
-					letter-spacing: 10px;
-					word-spacing: 5px;
-					margin-bottom: 32px;
+					margin-bottom: 16px;
 				}
 				span {
 					margin-bottom: 24px;
@@ -39,7 +36,6 @@
 			}
 
 			.col-6 {
-				padding-left: 0;
 				a {
 					@include anchor-reset;
 
@@ -54,6 +50,62 @@
 						}
 					}
 				}
+			}
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.row {
+		.col-12 {
+			h2 {
+				font-size: 20px;
+				letter-spacing: 6px;
+				word-spacing: 2px;
+			}
+		}
+
+		.col-6 {
+			width: 100%;
+			padding-left: 12px;
+			padding-right: 12px;
+		}
+	}
+}
+
+@media (min-width: 576px) and (max-width: 1024px) {
+	.row {
+		.col-12 {
+			h2 {
+				font-size: 28px;
+				letter-spacing: 6px;
+				word-spacing: 2px;
+			}
+		}
+		.col-6 {
+			width: 100%;
+			padding-left: 12px;
+			padding-right: 12px;
+		}
+	}
+}
+
+@media (min-width: 1025px) {
+	.container {
+		padding: 0;
+		.row {
+			padding: 0;
+			margin: 0;
+			.col-12 {
+				padding: 0;
+
+				h2 {
+					font-size: 32px;
+				}
+			}
+
+			.col-6 {
+				padding-left: 0;
 			}
 		}
 	}

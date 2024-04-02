@@ -1,26 +1,25 @@
-import { Component } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Location } from '@angular/common';
+import { filter } from 'rxjs';
 
 @Component({
 	selector: 'app-portofolio',
 	templateUrl: './portofolio.component.html',
 	styleUrls: ['./portofolio.component.scss'],
 })
-export class PortofolioComponent {
-	// imagesDormitorFolderPath = '../../assets/DormitorCompressed/';
-	// imagesRestaurantFolderPath = '../../assets/RestaurantCompressed/';
-	// imagesBunicaFolderPath = '../../assets/BunicaCompressed/';
-	// imagesCabanaFolderPath = '../../assets/CabanaCompressed/';
-	// imagesGreenFolderPath = '../../assets/GreenCompressed/';
-	// imagedMansardaFolderPath = '../../assets/MansardaCompressed/';
-	// imagesMogosoaiaFolderPath = '../../assets/MogosoaiaCompressed/';
-	// imagesOfficeFolderPath = '../../assets/OfficeCompressed/';
-	// imagesRedFolderPath = '../../assets/RedCompressed/';
-
+export class PortofolioComponent implements OnInit {
 	showContent: boolean = false;
 
 	constructor(private route: ActivatedRoute, private router: Router, private location: Location) {}
+
+	ngOnInit(): void {
+		this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe(() => {
+			if (this.location.path() === '/portofolio') {
+				this.showContent = false;
+			}
+		});
+	}
 
 	showDormitor(route: string) {
 		this.showContent = true;
@@ -55,11 +54,4 @@ export class PortofolioComponent {
 		this.showContent = false;
 		this.location.back();
 	}
-
-	// dormitorImgs = ['dormitor1.jpg', 'dormitor2.jpg', 'dormitor3.jpg', 'dormitor4.jpg', 'dormitor5.jpg'];
-
-	// getDormitorImgs(dormitorImg: string): string {
-	// 	const imagePath = this.imagesDormitorFolderPath + dormitorImg;
-	// 	return imagePath;
-	// }
 }

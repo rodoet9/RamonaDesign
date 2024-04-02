@@ -130,3 +130,46 @@ section {
 		}
 	}
 }
+
+@media (max-width: 768px) {
+	.row {
+		h2 {
+			font-size: 24px;
+			letter-spacing: 5px;
+			word-spacing: 2px;
+		}
+		p {
+			font-size: 16px;
+		}
+	}
+
+	.col-md-12 {
+		display: flex;
+		flex-direction: column;
+		.col-md-4 {
+			width: 100%;
+		}
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	.row {
+		h2 {
+			font-size: 32px;
+			letter-spacing: 7px;
+			word-spacing: 3px;
+		}
+		p {
+			font-size: 16px;
+		}
+	}
+
+	.col-md-12 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.col-md-4 {
+			width: 100%;
+		}
+	}
+}
