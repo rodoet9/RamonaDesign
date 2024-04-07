@@ -36,10 +36,16 @@
 			}
 
 			.col-6 {
+				margin-bottom: 12px;
+				h5 {
+					text-align: center;
+				}
+
 				a {
 					@include anchor-reset;
 
 					img {
+						box-shadow: 4px 4px 6px #b19777;
 						margin-bottom: 12px;
 						border-radius: 8px;
 						width: 100%;
@@ -59,12 +65,35 @@
 	.row {
 		.col-12 {
 			h2 {
-				font-size: 20px;
+				font-size: 24px;
 				letter-spacing: 6px;
 				word-spacing: 2px;
+				text-align: center;
 			}
 		}
 
+		.col-6 {
+			width: 100%;
+			padding-left: 12px;
+			padding-right: 12px;
+
+			h5 {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+	.row {
+		.col-12 {
+			h2 {
+				font-size: 24px;
+				letter-spacing: 6px;
+				word-spacing: 2px;
+				text-align: center;
+			}
+		}
 		.col-6 {
 			width: 100%;
 			padding-left: 12px;
@@ -73,7 +102,7 @@
 	}
 }
 
-@media (min-width: 576px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
 	.row {
 		.col-12 {
 			h2 {
@@ -101,6 +130,8 @@
 
 				h2 {
 					font-size: 32px;
+					letter-spacing: 6px;
+					word-spacing: 2px;
 				}
 			}
 

@@ -59,6 +59,7 @@ import { MdbScrollspyModule } from 'mdb-angular-ui-kit/scrollspy';
 import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
 	declarations: [
@@ -125,6 +126,7 @@ import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 		MdbTabsModule,
 		MdbTooltipModule,
 		MdbValidationModule,
+		MatExpansionModule,
 	],
 	providers: [],
 	bootstrap: [AppComponent],

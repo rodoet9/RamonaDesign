@@ -9,152 +9,10 @@
 	.row {
 		.col-md-12 {
 			h2 {
-				font-size: 40px;
 				font-weight: 400;
 				color: #272727;
 				text-transform: uppercase;
-				letter-spacing: 10px;
-				word-spacing: 5px;
 				margin-bottom: 36px;
-
-				span {
-					color: #b19777;
-				}
-			}
-		}
-	}
-	.contact-info {
-		box-shadow: 3px 3px 5px #b197778b;
-		padding: 2px 16px;
-		border-radius: 12px;
-		margin-bottom: 20px;
-		h3 {
-			font-size: 24px;
-			font-weight: 400;
-			color: #272727;
-			text-transform: uppercase;
-			letter-spacing: 3px;
-			word-spacing: 2px;
-
-			span {
-				color: #b19777;
-			}
-
-			img {
-				width: 36px;
-				height: 36px;
-				margin-left: 12px;
-			}
-		}
-
-		p {
-			text-align: justify;
-			font-size: 18px;
-
-			a {
-				@include anchor-reset;
-				color: #b19777;
-				font-weight: 600;
-			}
-
-			a:hover {
-				text-decoration: underline;
-			}
-		}
-	}
-
-	.working-hours {
-		box-shadow: 3px 3px 5px #b197778b;
-		padding: 2px 16px;
-		border-radius: 12px;
-		margin-bottom: 20px;
-
-		h3 {
-			font-size: 24px;
-			font-weight: 400;
-			color: #272727;
-			text-transform: uppercase;
-			letter-spacing: 3px;
-			word-spacing: 2px;
-
-			span {
-				color: #b19777;
-			}
-
-			img {
-				width: 36px;
-				height: 36px;
-				margin-left: 12px;
-			}
-		}
-		p {
-			text-align: justify;
-			font-size: 18px;
-
-			span {
-				color: #b19777;
-				font-weight: 600;
-			}
-		}
-	}
-
-	.social-media {
-		box-shadow: 3px 3px 5px #b197778b;
-		padding: 2px 16px;
-		border-radius: 12px;
-		margin-bottom: 20px;
-
-		h3 {
-			font-size: 24px;
-			font-weight: 400;
-			color: #272727;
-			text-transform: uppercase;
-			letter-spacing: 3px;
-			word-spacing: 2px;
-
-			span {
-				color: #b19777;
-			}
-
-			img {
-				width: 36px;
-				height: 36px;
-				margin-left: 12px;
-			}
-		}
-
-		ul {
-			@include reset-list;
-			display: flex;
-
-			li {
-				font-size: 16px;
-				display: flex;
-				justify-content: space-between;
-				margin-bottom: 8px;
-				span {
-					color: #b19777;
-				}
-				a {
-					@include anchor-reset;
-
-					svg:hover {
-						fill: #b19777;
-					}
-				}
-				a:hover {
-					color: #b19777;
-					text-decoration: underline;
-				}
-			}
-		}
-		p {
-			text-align: justify;
-			font-size: 18px;
-
-			span {
-				color: #b19777;
-				font-weight: 600;
 			}
 		}
 	}
@@ -165,69 +23,98 @@
 		.row {
 			.col-md-12 {
 				h2 {
-					font-size: 28px;
+					font-size: 24px;
 					letter-spacing: 5px;
-				}
-			}
-		}
-
-		.contact-info,
-		.working-hours,
-		.social-media {
-			h3 {
-				font-size: 20px;
-				letter-spacing: 2px;
-			}
-			p {
-				font-size: 16px;
-				text-align: left;
-			}
-		}
-
-		.social-media {
-			ul {
-				li {
-					a {
-						svg {
-							width: 50px;
-							height: 50px;
-						}
-					}
+					text-align: center;
 				}
 			}
 		}
 	}
 }
 
-@media (min-width: 376px) and (max-width: 425px) {
+@media (min-width: 376px) and (max-width: 768px) {
 	.container {
 		.row {
 			.col-md-12 {
 				h2 {
-					font-size: 28px;
+					font-size: 24px;
 					letter-spacing: 5px;
 					text-align: center;
 				}
 			}
 		}
+	}
+}
 
+@media (min-width: 769px) and (max-width: 1025px) {
+	.container {
+		.row {
+			h2 {
+				font-size: 28px;
+				letter-spacing: 6px;
+				word-spacing: 2px;
+			}
+		}
+	}
+}
+@media (min-width: 1026px) {
+	.row {
+		h2 {
+			font-size: 32px;
+			letter-spacing: 6px;
+			word-spacing: 2px;
+		}
+	}
+}
+
+.accordions {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+}
+
+.mat-accordion {
+	// width: 80%;
+
+	.mat-expansion-panel {
+		.mat-expansion-panel-header-title {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 24px;
+			font-weight: 300;
+		}
+		background-color: whitesmoke;
 		.contact-info,
 		.working-hours,
 		.social-media {
-			h3 {
-				font-size: 20px;
-				letter-spacing: 2px;
-			}
 			p {
+				line-height: 150%;
+				font-family: 'Montserrat', sans-serif;
 				font-size: 16px;
-				text-align: left;
-			}
-		}
 
-		.social-media {
+				span {
+					color: #b19777;
+					font-weight: 600;
+				}
+
+				a {
+					@include anchor-reset;
+
+					color: #b19777;
+					font-weight: 600;
+				}
+			}
+
 			ul {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+
+				display: flex;
 				li {
 					a {
+						@include anchor-reset;
+
 						svg {
 							width: 50px;
 							height: 50px;
