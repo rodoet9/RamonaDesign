@@ -6,22 +6,10 @@
 }
 
 .container {
-	.row {
-		.col-md-12 {
-			h2 {
-				font-weight: 400;
-				color: #272727;
-				letter-spacing: 5px;
-				word-spacing: 3px;
-				margin-bottom: 16px;
+	border-top: 1px solid #b1977763;
 
-				span {
-					color: #b19777;
-				}
-			}
-		}
-	}
 	.row {
+		margin-top: 32px;
 		.col-md-4 {
 			border-right: 1px solid #b197773d;
 			h2 {
@@ -76,14 +64,6 @@
 	.container {
 		padding: 0 24px;
 		.row {
-			.col-md-12 {
-				h2 {
-					font-size: 24px;
-					letter-spacing: 3px;
-					word-spacing: 2px;
-					margin-bottom: 24px;
-				}
-			}
 			.col-md-4 {
 				box-shadow: 1px 1px 2px #b197777e;
 				padding: 2px 16px;
@@ -100,14 +80,6 @@
 		padding: 0 24px;
 
 		.row {
-			.col-md-12 {
-				h2 {
-					font-size: 30px;
-					letter-spacing: 5px;
-					word-spacing: 3px;
-				}
-			}
-
 			.col-md-4 {
 				box-shadow: 1px 1px 2px #b197777e;
 				padding: 2px 16px;
@@ -124,14 +96,6 @@
 		padding: 0 24px;
 
 		.row {
-			.col-md-12 {
-				h2 {
-					font-size: 30px;
-					letter-spacing: 5px;
-					word-spacing: 3px;
-				}
-			}
-
 			.col-md-4 {
 				box-shadow: 1px 1px 2px #b197777e;
 				border-radius: 12px;
@@ -151,13 +115,6 @@
 @media (min-width: 769px) and (max-width: 991px) {
 	.container {
 		.row {
-			.col-md-12 {
-				h2 {
-					font-size: 30px;
-					letter-spacing: 5px;
-					word-spacing: 3px;
-				}
-			}
 			.col-md-4 {
 				h2 {
 					font-size: 20px;
@@ -177,13 +134,6 @@
 @media (min-width: 992px) and (max-width: 1024px) {
 	.container {
 		.row {
-			.col-md-12 {
-				h2 {
-					font-size: 30px;
-					letter-spacing: 5px;
-					word-spacing: 3px;
-				}
-			}
 			.col-md-4 {
 				h2 {
 					font-size: 20px;
@@ -211,13 +161,6 @@
 @media (min-width: 1025px) and (max-width: 1199px) {
 	.container {
 		.row {
-			.col-md-12 {
-				h2 {
-					font-size: 30px;
-					letter-spacing: 5px;
-					word-spacing: 3px;
-				}
-			}
 			.col-md-4 {
 				h2 {
 					font-size: 20px;
