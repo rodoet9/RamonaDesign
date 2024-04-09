@@ -36,12 +36,12 @@
 		top: 35%;
 		left: 25%;
 		transform: translate(-35%, -35%);
-		border-radius: 4px;
 		width: 600px;
+		border-radius: 4px;
 		z-index: 2;
 
 		&_title {
-			font-size: 36px;
+			font-size: 24px;
 			color: #fff;
 			text-align: left;
 		}
@@ -61,24 +61,23 @@
 		position: relative;
 		opacity: 0;
 		transition: opacity 6s;
-		margin-top: 80px;
-		margin-bottom: 80px;
+		margin: 80px 0;
 		width: 80%;
 		border-radius: 24px;
 		background-color: #171717;
 		box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45), 0px -25px 20px -20px rgba(0, 0, 0, 0.45);
-	}
 
-	.typing-container.opacity {
-		opacity: 1;
-	}
+		&.opacity {
+			opacity: 1;
+		}
 
-	.typed-text {
-		text-align: center;
-		margin: 0;
-		letter-spacing: 2px;
-		font-weight: 200;
-		color: #fff;
+		.typed-text {
+			text-align: center;
+			margin: 0;
+			letter-spacing: 2px;
+			font-weight: 200;
+			color: #fff;
+		}
 	}
 
 	.transition-section {
@@ -101,6 +100,7 @@
 				font-size: 24px;
 				border-bottom: 1px solid #171717;
 			}
+
 			.subtitle {
 				font-size: 18px;
 			}
@@ -133,11 +133,13 @@
 			justify-content: center;
 			flex-wrap: wrap;
 			margin-top: 24px;
+			gap: 12px;
 
 			&-one,
 			&-two,
 			&-three {
 				position: relative;
+
 				&:hover {
 					border-radius: 24px;
 					box-shadow: 2px 2px 6px #b19777;
@@ -162,6 +164,17 @@
 			.projects-overview-two:hover .title,
 			.projects-overview-three:hover .title {
 				opacity: 1;
+			}
+
+			.photo img {
+				transition: transform 0.5s ease, filter 0.5s ease;
+				width: auto;
+				max-height: 500px;
+				border-radius: 24px;
+
+				&:hover {
+					filter: blur(1px);
+				}
 			}
 		}
 	}
@@ -225,21 +238,8 @@
 				font-size: 16px;
 			}
 
-			&-overview {
-				gap: 12px;
-
-				.photo {
-					img {
-						transition: transform 0.5s ease, filter 0.5s ease;
-						width: auto;
-						max-height: 350px;
-						border-radius: 24px;
-
-						&:hover {
-							filter: blur(1px);
-						}
-					}
-				}
+			&-overview .photo img {
+				max-height: 350px;
 			}
 		}
 	}
@@ -303,35 +303,10 @@
 
 		&-list {
 			font-size: 16px;
-			margin-top: 24px;
-
-			a {
-				@include anchor-reset;
-
-				&:hover {
-					color: #b19777;
-					font-weight: 700;
-					transition: color 0.5s, font-weight 0.5s;
-				}
-			}
 		}
 
-		&-overview {
-			gap: 12px;
-			margin-top: 24px;
-
-			.photo {
-				img {
-					transition: transform 0.5s ease, filter 0.5s ease;
-					width: auto;
-					max-height: 400px;
-					border-radius: 24px;
-
-					&:hover {
-						filter: blur(1px);
-					}
-				}
-			}
+		&-overview .photo img {
+			max-height: 400px;
 		}
 	}
 }
@@ -393,33 +368,10 @@
 
 		&-list {
 			font-size: 16px;
-
-			a {
-				@include anchor-reset;
-
-				&:hover {
-					color: #b19777;
-					font-weight: 700;
-					transition: color 0.5s, font-weight 0.5s;
-				}
-			}
 		}
 
-		&-overview {
-			gap: 12px;
-
-			.photo {
-				img {
-					transition: transform 0.5s ease, filter 0.5s ease;
-					width: auto;
-					max-height: 450px;
-					border-radius: 24px;
-
-					&:hover {
-						filter: blur(1px);
-					}
-				}
-			}
+		&-overview .photo img {
+			max-height: 450px;
 		}
 	}
 }
@@ -468,6 +420,54 @@
 				}
 			}
 		}
+	}
+
+	.projects {
+		width: 80%;
+
+		&-title {
+			font-size: 24px;
+		}
+
+		&-list {
+			font-size: 18px;
+		}
+
+		&-overview .photo img {
+			max-height: 300px;
+		}
+	}
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+	.row {
+		.typing-container {
+			margin-top: 40px;
+			margin-bottom: 40px;
+			height: 120px;
+		}
+
+		.typed-text {
+			font-size: 24px;
+		}
+
+		.transition-section {
+			display: flex;
+
+			img {
+				max-height: 700px;
+				width: 60%;
+			}
+			.transition-section-text {
+				.title {
+					font-size: 20px;
+				}
+
+				.subtitle {
+					font-size: 16px;
+				}
+			}
+		}
 
 		.projects {
 			width: 80%;
@@ -477,172 +477,59 @@
 			}
 
 			&-list {
-				font-size: 18px;
-
-				a {
-					@include anchor-reset;
-
-					&:hover {
-						color: #b19777;
-						font-weight: 700;
-						transition: color 0.5s, font-weight 0.5s;
-					}
-				}
-			}
-
-			&-overview {
-				gap: 12px;
-
-				.photo {
-					img {
-						transition: transform 0.5s ease, filter 0.5s ease;
-						width: auto;
-						max-height: 500px;
-						border-radius: 24px;
-
-						&:hover {
-							filter: blur(1px);
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-@media (min-width: 1025px) and (max-width: 1440px) {
-	.typing-container {
-		margin-top: 40px;
-		margin-bottom: 40px;
-		height: 120px;
-	}
-
-	.typed-text {
-		font-size: 24px;
-	}
-
-	.transition-section {
-		display: flex;
-
-		img {
-			max-height: 700px;
-			width: 60%;
-		}
-		.transition-section-text {
-			.title {
-				font-size: 20px;
-			}
-
-			.subtitle {
 				font-size: 16px;
 			}
-		}
-	}
 
-	.projects {
-		width: 80%;
-
-		&-title {
-			font-size: 24px;
-		}
-
-		&-list {
-			font-size: 18px;
-
-			a {
-				@include anchor-reset;
-
-				&:hover {
-					color: #b19777;
-					font-weight: 700;
-					transition: color 0.5s, font-weight 0.5s;
-				}
-			}
-		}
-
-		&-overview {
-			gap: 12px;
-
-			.photo {
-				img {
-					transition: transform 0.5s ease, filter 0.5s ease;
-					width: auto;
-					max-height: 400px;
-					border-radius: 24px;
-
-					&:hover {
-						filter: blur(1px);
-					}
-				}
+			&-overview .photo img {
+				max-height: 420px;
 			}
 		}
 	}
 }
 
 @media (min-width: 1441px) {
-	.typing-container {
-		margin-top: 40px;
-		margin-bottom: 40px;
-		height: 120px;
-	}
-
-	.typed-text {
-		font-size: 24px;
-	}
-
-	.transition-section {
-		display: flex;
-
-		img {
-			max-height: 700px;
-			width: 60%;
+	.row {
+		.typing-container {
+			margin-top: 40px;
+			margin-bottom: 40px;
+			height: 120px;
 		}
-		.transition-section-text {
-			.title {
-				font-size: 20px;
-			}
 
-			.subtitle {
-				font-size: 16px;
-			}
-		}
-	}
-
-	.projects {
-		width: 80%;
-
-		&-title {
+		.typed-text {
 			font-size: 24px;
 		}
 
-		&-list {
-			font-size: 18px;
+		.transition-section {
+			display: flex;
 
-			a {
-				@include anchor-reset;
+			img {
+				max-height: 700px;
+				width: 60%;
+			}
+			.transition-section-text {
+				.title {
+					font-size: 20px;
+				}
 
-				&:hover {
-					color: #b19777;
-					font-weight: 700;
-					transition: color 0.5s, font-weight 0.5s;
+				.subtitle {
+					font-size: 16px;
 				}
 			}
 		}
 
-		&-overview {
-			gap: 12px;
+		.projects {
+			width: 80%;
 
-			.photo {
-				img {
-					transition: transform 0.5s ease, filter 0.5s ease;
-					width: auto;
-					max-height: 450px;
-					border-radius: 24px;
+			&-title {
+				font-size: 24px;
+			}
 
-					&:hover {
-						filter: blur(1px);
-					}
-				}
+			&-list {
+				font-size: 16px;
+			}
+
+			&-overview .photo img {
+				max-height: 450px;
 			}
 		}
 	}
