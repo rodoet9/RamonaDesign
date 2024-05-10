@@ -60,6 +60,7 @@ import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { LivingThreeComponent } from './portofolio/living/living-three/living-three.component';
 
 @NgModule({
 	declarations: [
@@ -94,6 +95,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 		LivingOneComponent,
 		LivingTwoComponent,
 		TerasaOneComponent,
+  LivingThreeComponent,
 	],
 	imports: [
 		MatTabsModule,

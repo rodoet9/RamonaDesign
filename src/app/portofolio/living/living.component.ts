@@ -29,6 +29,10 @@ export class LivingComponent implements OnInit {
 		this.showContent = true;
 		this.router.navigate(['/portofolio/living', route]);
 	}
+	showLivingThree(route: string) {
+		this.showContent = true;
+		this.router.navigate(['/portofolio/living', route]);
+	}
 
 	hideContent(): void {
 		this.showContent = false;

@@ -24,6 +24,7 @@ import { DinningRoomTwoComponent } from './portofolio/dinning-room/dinning-room-
 import { LivingOneComponent } from './portofolio/living/living-one/living-one.component';
 import { LivingTwoComponent } from './portofolio/living/living-two/living-two.component';
 import { TerasaOneComponent } from './portofolio/terasa/terasa-one/terasa-one.component';
+import { LivingThreeComponent } from './portofolio/living/living-three/living-three.component';
 
 const routes: Routes = [
 	{
@@ -140,6 +141,11 @@ const routes: Routes = [
 						path: 'living-two',
 						component: LivingTwoComponent,
 						title: 'Living 2',
+					},
+					{
+						path: 'living-three',
+						component: LivingThreeComponent,
+						title: 'Living 3',
 					},
 				],
 			},
