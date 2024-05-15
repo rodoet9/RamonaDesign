@@ -29,6 +29,10 @@ export class DinningRoomComponent implements OnInit {
 		this.showContent = true;
 		this.router.navigate(['/portofolio/dinning-room', route]);
 	}
+	showDinningRoomThree(route: string) {
+		this.showContent = true;
+		this.router.navigate(['/portofolio/dinning-room', route]);
+	}
 
 	hideContent(): void {
 		this.showContent = false;

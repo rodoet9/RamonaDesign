@@ -61,6 +61,12 @@ import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { LivingThreeComponent } from './portofolio/living/living-three/living-three.component';
+import { BaieThreeComponent } from './portofolio/baie/baie-three/baie-three.component';
+import { LivingFourComponent } from './portofolio/living/living-four/living-four.component';
+import { BirouTwoComponent } from './portofolio/birou/birou-two/birou-two.component';
+import { BucatarieThreeComponent } from './portofolio/bucatarie/bucatarie-three/bucatarie-three.component';
+import { DinningRoomThreeComponent } from './portofolio/dinning-room/dinning-room-three/dinning-room-three.component';
+import { DormitorFourComponent } from './portofolio/dormitor/dormitor-four/dormitor-four.component';
 
 @NgModule({
 	declarations: [
@@ -95,7 +101,13 @@ import { LivingThreeComponent } from './portofolio/living/living-three/living-th
 		LivingOneComponent,
 		LivingTwoComponent,
 		TerasaOneComponent,
-  LivingThreeComponent,
+		LivingThreeComponent,
+		BaieThreeComponent,
+		LivingFourComponent,
+		BirouTwoComponent,
+		BucatarieThreeComponent,
+		DinningRoomThreeComponent,
+		DormitorFourComponent,
 	],
 	imports: [
 		MatTabsModule,

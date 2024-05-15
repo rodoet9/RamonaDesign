@@ -17,6 +17,15 @@
 				</a>
 			</div>
 		</div>
+
+		<div class="row" *ngIf="!showContent">
+			<div class="col-6">
+				<a (click)="showBucatarieThree('bucatarie-three')">
+					<img src="../../../assets/Bucatarie/B3/Bucatarie3-1.jpeg" />
+				</a>
+			</div>
+		</div>
+
 		<div *ngIf="showContent">
 			<div class="row">
 				<div class="col-12">

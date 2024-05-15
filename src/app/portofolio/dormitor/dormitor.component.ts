@@ -33,6 +33,10 @@ export class DormitorComponent implements OnInit {
 		this.showContent = true;
 		this.router.navigate(['/portofolio/dormitor', route]);
 	}
+	showDormitorFour(route: string) {
+		this.showContent = true;
+		this.router.navigate(['/portofolio/dormitor', route]);
+	}
 
 	hideContent(): void {
 		this.showContent = false;

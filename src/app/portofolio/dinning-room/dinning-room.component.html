@@ -17,6 +17,13 @@
 				</a>
 			</div>
 		</div>
+		<div class="row" *ngIf="!showContent">
+			<div class="col-6">
+				<a (click)="showDinningRoomThree('dinning-room-three')">
+					<img src="../../../assets/DinningRoom/D3/DinningRoom3-2.jpeg" />
+				</a>
+			</div>
+		</div>
 
 		<div *ngIf="showContent">
 			<div class="row">

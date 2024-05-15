@@ -18,6 +18,14 @@
 			</div>
 		</div>
 
+		<div class="row" *ngIf="!showContent">
+			<div class="col-6">
+				<a (click)="showBaieThree('baie-three')">
+					<img src="../../../assets/Baie/B3/Baie3-6.jpeg" />
+				</a>
+			</div>
+		</div>
+
 		<div class="row" *ngIf="showContent">
 			<div class="row">
 				<div class="col-12">

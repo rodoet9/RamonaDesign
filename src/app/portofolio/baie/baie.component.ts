@@ -30,6 +30,11 @@ export class BaieComponent implements OnInit {
 		this.router.navigate(['/portofolio/baie', route]);
 	}
 
+	showBaieThree(route: string) {
+		this.showContent = true;
+		this.router.navigate(['/portofolio/baie', route]);
+	}
+
 	hideContent(): void {
 		this.showContent = false;
 		this.location.back();

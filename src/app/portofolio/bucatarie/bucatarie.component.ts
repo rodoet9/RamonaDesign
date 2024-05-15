@@ -29,6 +29,10 @@ export class BucatarieComponent implements OnInit {
 		this.showContent = true;
 		this.router.navigate(['/portofolio/bucatarie', route]);
 	}
+	showBucatarieThree(route: string) {
+		this.showContent = true;
+		this.router.navigate(['/portofolio/bucatarie', route]);
+	}
 
 	hideContent(): void {
 		this.showContent = false;

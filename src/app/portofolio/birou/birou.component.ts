@@ -20,7 +20,13 @@ export class BirouComponent implements OnInit {
 			}
 		});
 	}
+
 	showBirouOne(route: string) {
+		this.showContent = true;
+		this.router.navigate(['/portofolio/birou', route]);
+	}
+
+	showBirouTwo(route: string) {
 		this.showContent = true;
 		this.router.navigate(['/portofolio/birou', route]);
 	}
