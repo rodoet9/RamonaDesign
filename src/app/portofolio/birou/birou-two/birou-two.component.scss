@@ -1,7 +1,38 @@
+@import '../../../../stylesheets/reset.scss';
+
 .row {
 	.col-12 {
+		.header {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			border-bottom: 1px solid #27272715;
+			margin-bottom: 16px;
+
+			.title {
+				h4 {
+					margin-top: 16px;
+					font-weight: 300;
+					text-align: center;
+				}
+			}
+
+			.vertical-line {
+				width: 1px;
+				height: 60px;
+				background-color: #27272715;
+			}
+
+			.dimensions {
+				margin-bottom: 8px;
+				ul {
+					@include reset-list;
+				}
+			}
+		}
+
 		img {
-			width: 90%;
+			width: 100%;
 			height: auto;
 			margin-bottom: 12px;
 			border-radius: 8px;
@@ -9,88 +40,34 @@
 	}
 }
 
-@media (max-width: 510px) {
-	.row {
+@media (max-width: 575px) {
+	h4 {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 767px) {
+	.header {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 
-		.col-12 {
-			width: 100%;
-			height: 100%;
-			img {
-				width: 100%;
-				height: auto;
-			}
+		.vertical-line {
+			display: none;
 		}
-	}
-}
 
-@media (min-width: 511px) and (max-width: 767px) {
-	.row {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-
-		.col-12 {
-			width: 80%;
-			height: auto;
-
-			.portrait {
-				width: 100%;
-				height: auto;
-			}
-
-			img {
-				width: 100%;
-				height: auto;
-			}
-		}
-	}
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-	.row {
-		.col-12 {
+		.dimensions {
 			display: flex;
-			justify-content: center;
+			align-items: center;
 
-			.square {
-				width: 70%;
-				height: auto;
+			h6 {
+				font-size: 12px;
+				margin: 0;
 			}
 
-			.portrait {
-				max-width: 350px;
-				height: auto;
-			}
-
-			img {
-				width: 95%;
-				height: auto;
-			}
-		}
-	}
-}
-
-@media (min-width: 1200px) {
-	.row {
-		.col-12 {
-			display: flex;
-			justify-content: center;
-
-			.square {
-				width: 60%;
-				height: auto;
-			}
-
-			.portrait {
-				max-width: 470px;
-				height: auto;
-			}
-			img {
-				width: 82%;
-				height: auto;
+			ul {
+				display: flex;
+				font-size: 12px;
 			}
 		}
 	}

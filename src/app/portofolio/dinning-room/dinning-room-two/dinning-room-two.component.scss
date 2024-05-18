@@ -1,10 +1,74 @@
+@import '../../../../stylesheets/reset.scss';
+
 .row {
 	.col-12 {
+		.header {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			border-bottom: 1px solid #27272715;
+			margin-bottom: 16px;
+
+			.title {
+				h4 {
+					margin-top: 16px;
+					font-weight: 300;
+					text-align: center;
+				}
+			}
+
+			.vertical-line {
+				width: 1px;
+				height: 60px;
+				background-color: #27272715;
+			}
+
+			.dimensions {
+				margin-bottom: 8px;
+				ul {
+					@include reset-list;
+				}
+			}
+		}
+
 		img {
 			width: 100%;
 			height: auto;
-			margin-bottom: 24px;
+			margin-bottom: 12px;
 			border-radius: 8px;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	h4 {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 767px) {
+	.header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.vertical-line {
+			display: none;
+		}
+
+		.dimensions {
+			display: flex;
+			align-items: center;
+
+			h6 {
+				font-size: 12px;
+				margin: 0;
+			}
+
+			ul {
+				display: flex;
+				font-size: 12px;
+			}
 		}
 	}
 }
