@@ -1,8 +1,8 @@
 <div class="row">
 	<ngb-carousel [interval]="3000" [showNavigationArrows]="false" class="carousel">
-		<ng-template ngbSlide *ngFor="let imageName of imageNames">
+		<ng-template ngbSlide *ngFor="let imageName of imgHomeCarousel">
 			<div class="picsum-img-wrapper">
-				<img [src]="getImagePath(imageName)" />
+				<img [src]="imageName" />
 			</div>
 		</ng-template>
 	</ngb-carousel>
@@ -25,7 +25,7 @@
 
 <div class="row">
 	<div class="transition-section">
-		<img src="../../assets/HomePics/HomeTransition.jpeg" />
+		<img [src]="homePics[0]" />
 		<div class="transition-section-text">
 			<p class="title">Amprenta ta, povestea ta, casa ta</p>
 			<p class="subtitle">
@@ -42,15 +42,15 @@
 		<p class="projects-title">O privire rapida asupra proiectelor noastre</p>
 		<div class="projects-overview">
 			<div class="projects-overview-one">
-				<div class="photo"><img src="../../assets/HomePics/DormitorCropped.jpeg" /></div>
+				<div class="photo"><img [src]="homePics[3]" /></div>
 				<div class="title">Dormitor</div>
 			</div>
 			<div class="projects-overview-two">
-				<div class="photo"><img src="../../assets/HomePics/BaieCropped.jpeg" /></div>
+				<div class="photo"><img [src]="homePics[1]" /></div>
 				<div class="title">Baie</div>
 			</div>
 			<div class="projects-overview-three">
-				<div class="photo"><img src="../../assets/HomePics/BirouCropped.jpeg" /></div>
+				<div class="photo"><img [src]="homePics[2]" /></div>
 				<div class="title">Birou</div>
 			</div>
 		</div>

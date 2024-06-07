@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs';
+import { LivingService } from './living.service';
 
 @Component({
 	selector: 'app-living',
@@ -11,7 +12,17 @@ import { filter } from 'rxjs';
 export class LivingComponent implements OnInit {
 	showContent = false;
 
-	constructor(private route: ActivatedRoute, private router: Router, private location: Location) {}
+	public imageLivingOne: string[] = [];
+	public imageLivingTwo: string[] = [];
+	public imageLivingThree: string[] = [];
+	public imageLivingFour: string[] = [];
+
+	constructor(
+		private route: ActivatedRoute,
+		private router: Router,
+		private location: Location,
+		private livingService: LivingService
+	) {}
 
 	ngOnInit(): void {
 		this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe(() => {
@@ -19,6 +30,12 @@ export class LivingComponent implements OnInit {
 				this.showContent = false;
 			}
 		});
+
+		this.imageLivingOne = this.livingService.getImgLivingOne();
+		this.imageLivingTwo = this.livingService.getImgLivingTwo();
+		this.imageLivingThree = this.livingService.getSplitImgLivingThree();
+		this.imageLivingThree = this.livingService.getFullImgLivingThree();
+		this.imageLivingFour = this.livingService.getImgLivingFour();
 	}
 
 	showLivingOne(route: string) {

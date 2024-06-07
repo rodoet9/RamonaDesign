@@ -4,8 +4,6 @@ import { Injectable } from '@angular/core';
 	providedIn: 'root',
 })
 export class ImagesBaieService {
-	private imagesBaiePortofoliuUrl: string[] = ['https://rdesign.twic.pics/baie/BaiePortofoliu.png'];
-
 	private imagesBaieOneUrls: string[] = [
 		'https://rdesign.twic.pics/baie/B1/Baie1-1.jpeg',
 		'https://rdesign.twic.pics/baie/B1/Baie1-2.jpeg',

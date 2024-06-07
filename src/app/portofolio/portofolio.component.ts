@@ -11,6 +11,44 @@ import { filter } from 'rxjs';
 export class PortofolioComponent implements OnInit {
 	showContent: boolean = false;
 
+	public imgPortofoliu = [
+		{
+			title: 'Idei de design dormitor',
+			url: 'https://rdesign.twic.pics/dormitor/DormitorPortofoliu.png',
+			category: 'dormitor',
+		},
+		{
+			title: 'Idei de design baie',
+			url: 'https://rdesign.twic.pics/baie/BaiePortofoliu.png',
+			category: 'baie',
+		},
+		{
+			title: 'Idei de design birou',
+			url: 'https://rdesign.twic.pics/birou/BirouPortofoliu.png',
+			category: 'birou',
+		},
+		{
+			title: 'Idei de design bucatarie',
+			url: 'https://rdesign.twic.pics/bucatarie/BucatariePortofoliu.png',
+			category: 'bucatarie',
+		},
+		{
+			title: 'Idei de design dinning room',
+			url: 'https://rdesign.twic.pics/dinningroom/DinningAreaPortofoliu.png',
+			category: 'dinning-room',
+		},
+		{
+			title: 'Idei de design living',
+			url: 'https://rdesign.twic.pics/living/LivingPortofoliu.png',
+			category: 'living',
+		},
+		{
+			title: 'Idei de design terasa',
+			url: 'https://rdesign.twic.pics/terasa/TerasaPortofoliu.png',
+			category: 'terasa',
+		},
+	];
+
 	constructor(private route: ActivatedRoute, private router: Router, private location: Location) {}
 
 	ngOnInit(): void {
@@ -21,31 +59,7 @@ export class PortofolioComponent implements OnInit {
 		});
 	}
 
-	showDormitor(route: string) {
-		this.showContent = true;
-		this.router.navigate(['/portofolio', route]);
-	}
-	showBaie(route: string) {
-		this.showContent = true;
-		this.router.navigate(['/portofolio', route]);
-	}
-	showBirou(route: string) {
-		this.showContent = true;
-		this.router.navigate(['/portofolio', route]);
-	}
-	showBucatarie(route: string) {
-		this.showContent = true;
-		this.router.navigate(['/portofolio', route]);
-	}
-	showDinningRoom(route: string) {
-		this.showContent = true;
-		this.router.navigate(['/portofolio', route]);
-	}
-	showLiving(route: string) {
-		this.showContent = true;
-		this.router.navigate(['/portofolio', route]);
-	}
-	showTerasa(route: string) {
+	showCategory(route: string) {
 		this.showContent = true;
 		this.router.navigate(['/portofolio', route]);
 	}

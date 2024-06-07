@@ -10,6 +10,23 @@ export class HomeComponent implements OnInit {
 	typedText: string = '';
 	typingStarted: boolean = false;
 
+	public imgHomeCarousel: string[] = [
+		'https://rdesign.twic.pics/homecarousel/img1.jpeg',
+		'https://rdesign.twic.pics/homecarousel/img2.jpeg',
+		'https://rdesign.twic.pics/homecarousel/img3.jpeg',
+		'https://rdesign.twic.pics/homecarousel/img4.jpeg',
+		'https://rdesign.twic.pics/homecarousel/img5.jpeg',
+		'https://rdesign.twic.pics/homecarousel/img6.jpeg',
+		'https://rdesign.twic.pics/homecarousel/img7.jpeg',
+	];
+
+	public homePics: string[] = [
+		'https://rdesign.twic.pics/homepics/HomeTransition.jpeg',
+		'https://rdesign.twic.pics/homepics/BaieCropped.jpeg',
+		'https://rdesign.twic.pics/homepics/BirouCropped.jpeg',
+		'https://rdesign.twic.pics/homepics/DormitorCropped.jpeg',
+	];
+
 	constructor() {}
 
 	ngOnInit() {
@@ -17,18 +34,9 @@ export class HomeComponent implements OnInit {
 		this.typingStarted = true;
 	}
 
-	imagesFolderPath = '/assets/homeCarousel/';
-
-	imageNames = ['img1.jpeg', 'img2.jpeg', 'img3.jpeg', 'img4.jpeg', 'img5.jpeg', 'img6.jpeg', 'img7.jpeg'];
-
-	getImagePath(imageName: string): string {
-		const imagePath = this.imagesFolderPath + imageName;
-		return imagePath;
-	}
-
 	typeWriter() {
 		let i = 0;
-		const speed = 100;
+		const speed = 75;
 		const typingInterval = setInterval(() => {
 			if (i < this.quote.length) {
 				this.typedText += this.quote.charAt(i);
