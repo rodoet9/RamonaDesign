@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs';
+import { ImagesBucatarieService } from './images-bucatarie.service';
 
 @Component({
 	selector: 'app-bucatarie',
@@ -11,7 +12,16 @@ import { filter } from 'rxjs';
 export class BucatarieComponent implements OnInit {
 	showContent = false;
 
-	constructor(private route: ActivatedRoute, private router: Router, private location: Location) {}
+	public imageBucatarieOne: string[] = [];
+	public imageBucatarieTwo: string[] = [];
+	public imageBucatarieThree: string[] = [];
+
+	constructor(
+		private route: ActivatedRoute,
+		private router: Router,
+		private location: Location,
+		private imagesBucatarieService: ImagesBucatarieService
+	) {}
 
 	ngOnInit(): void {
 		this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe(() => {
@@ -19,6 +29,10 @@ export class BucatarieComponent implements OnInit {
 				this.showContent = false;
 			}
 		});
+
+		this.imageBucatarieOne = this.imagesBucatarieService.getImagesBucatarieOne();
+		this.imageBucatarieTwo = this.imagesBucatarieService.getImagesBucatarieTwo();
+		this.imageBucatarieThree = this.imagesBucatarieService.getImagesBucatarieThree();
 	}
 
 	showBucatarieOne(route: string) {

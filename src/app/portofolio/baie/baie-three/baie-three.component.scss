@@ -29,16 +29,19 @@
 			}
 		}
 	}
+
 	.col-12 {
 		display: flex;
+		flex-direction: column;
+		align-items: center;
 		justify-content: center;
+	}
 
-		img {
-			width: 80%;
-			height: auto;
-			margin-bottom: 12px;
-			border-radius: 8px;
-		}
+	img {
+		width: 80%;
+		height: auto;
+		margin-bottom: 12px;
+		border-radius: 8px;
 	}
 }
 

@@ -13,51 +13,12 @@
 				</ul>
 			</div>
 		</div>
-		<img src="../../../../assets/Living/L4/Living4-1.jpeg" />
 	</div>
 </div>
 <div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/Living/L4/Living4-2.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/Living/L4/Living4-3.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/Living/L4/Living4-4.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/Living/L4/Living4-5.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/Living/L4/Living4-6.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/Living/L4/Living4-7.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/Living/L4/Living4-8.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img class="square" src="../../../../assets/Living/L4/Living4-9.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img class="portrait" src="../../../../assets/Living/L4/Living4-10.jpeg" />
+	<div class="col-12" *ngFor="let url of imgLivingFourUrls">
+		<div class="img-container">
+			<img [src]="url" />
+		</div>
 	</div>
 </div>

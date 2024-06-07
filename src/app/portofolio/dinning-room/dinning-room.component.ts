@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs';
+import { DinningRoomService } from './dinning-room.service';
 
 @Component({
 	selector: 'app-dinning-room',
@@ -11,7 +12,16 @@ import { filter } from 'rxjs';
 export class DinningRoomComponent implements OnInit {
 	showContent = false;
 
-	constructor(private route: ActivatedRoute, private router: Router, private location: Location) {}
+	public imgDinningRoomOneUrl: string[] = [];
+	public imgDinningRoomTwoUrl: string[] = [];
+	public imgDinningRoomThreeUrl: string[] = [];
+
+	constructor(
+		private route: ActivatedRoute,
+		private router: Router,
+		private location: Location,
+		private dinningRoomService: DinningRoomService
+	) {}
 
 	ngOnInit(): void {
 		this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe(() => {
@@ -19,6 +29,9 @@ export class DinningRoomComponent implements OnInit {
 				this.showContent = false;
 			}
 		});
+		this.imgDinningRoomOneUrl = this.dinningRoomService.getImagesDinningRoomOne();
+		this.imgDinningRoomTwoUrl = this.dinningRoomService.getImagesDinningRoomTwo();
+		this.imgDinningRoomThreeUrl = this.dinningRoomService.getImagesDinningRoomThree();
 	}
 
 	showDinningRoomOne(route: string) {

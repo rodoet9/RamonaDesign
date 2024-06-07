@@ -13,21 +13,10 @@
 				</ul>
 			</div>
 		</div>
-		<img src="../../../../assets/Bucatarie/B1/Bucatarie1-1.jpeg" />
 	</div>
 </div>
 <div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/Bucatarie/B1/Bucatarie1-2.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/Bucatarie/B1/Bucatarie1-3.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/Bucatarie/B1/Bucatarie1-5.jpeg" />
+	<div class="col-12" *ngFor="let url of imgBucatarieOneUrls">
+		<img [src]="url" />
 	</div>
 </div>

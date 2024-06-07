@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs';
+import { ImagesDormitorService } from './images-dormitor.service';
 
 @Component({
 	selector: 'app-dormitor',
@@ -11,7 +12,17 @@ import { filter } from 'rxjs';
 export class DormitorComponent implements OnInit {
 	showContent = false;
 
-	constructor(private route: ActivatedRoute, private router: Router, private location: Location) {}
+	public imageDormitorOne: string[] = [];
+	public imageDormitorTwo: string[] = [];
+	public imageDormitorThree: string[] = [];
+	public imageDormitorFour: string[] = [];
+
+	constructor(
+		private route: ActivatedRoute,
+		private router: Router,
+		private location: Location,
+		private imagesDormitorService: ImagesDormitorService
+	) {}
 
 	ngOnInit(): void {
 		this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe(() => {
@@ -19,6 +30,11 @@ export class DormitorComponent implements OnInit {
 				this.showContent = false;
 			}
 		});
+
+		this.imageDormitorOne = this.imagesDormitorService.getImagesDormitorOne();
+		this.imageDormitorTwo = this.imagesDormitorService.getImagesDormitorTwo();
+		this.imageDormitorThree = this.imagesDormitorService.getImagesDormitorThree();
+		this.imageDormitorFour = this.imagesDormitorService.getImagesDormitorFour();
 	}
 
 	showDormitorOne(route: string) {

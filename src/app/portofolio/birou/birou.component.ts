@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Location } from '@angular/common';
 import { filter } from 'rxjs';
+import { ImagesBirouService } from './images-birou.service';
 
 @Component({
 	selector: 'app-birou',
@@ -11,7 +12,15 @@ import { filter } from 'rxjs';
 export class BirouComponent implements OnInit {
 	showContent = false;
 
-	constructor(private route: ActivatedRoute, private router: Router, private location: Location) {}
+	public imageBirouOne: string[] = [];
+	public imageBirouTwo: string[] = [];
+
+	constructor(
+		private route: ActivatedRoute,
+		private router: Router,
+		private location: Location,
+		private imagesBirouService: ImagesBirouService
+	) {}
 
 	ngOnInit(): void {
 		this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe(() => {
@@ -19,6 +28,9 @@ export class BirouComponent implements OnInit {
 				this.showContent = false;
 			}
 		});
+
+		this.imageBirouOne = this.imagesBirouService.getImagesBirouOne();
+		this.imageBirouTwo = this.imagesBirouService.getImagesBirouTwo();
 	}
 
 	showBirouOne(route: string) {

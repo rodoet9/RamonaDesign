@@ -13,46 +13,10 @@
 				</ul>
 			</div>
 		</div>
-		<img src="../../../../assets/Terasa/T1/Terasa3.jpeg" />
 	</div>
 </div>
 <div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/Terasa/T1/Terasa4.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/Terasa/T1/Terasa5.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/Terasa/T1/Terasa6.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/Terasa/T1/Terasa7.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/Terasa/T1/Terasa8.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/Terasa/T1/Terasa9.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/Terasa/T1/Terasa10.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/Terasa/T1/Terasa11.jpeg" />
+	<div class="col-12" *ngFor="let url of imgTerasaOneUrls">
+		<img [src]="url" />
 	</div>
 </div>

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Location } from '@angular/common';
 import { filter } from 'rxjs';
+import { ImagesBaieService } from './images-baie.service';
 
 @Component({
 	selector: 'app-baie',
@@ -11,7 +12,16 @@ import { filter } from 'rxjs';
 export class BaieComponent implements OnInit {
 	showContent = false;
 
-	constructor(private route: ActivatedRoute, private router: Router, private location: Location) {}
+	public imageBaieOne: string[] = [];
+	public imageBaieTwo: string[] = [];
+	public imageBaieThree: string[] = [];
+
+	constructor(
+		private route: ActivatedRoute,
+		private router: Router,
+		private location: Location,
+		private imagesBaieService: ImagesBaieService
+	) {}
 
 	ngOnInit(): void {
 		this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe(() => {
@@ -19,6 +29,10 @@ export class BaieComponent implements OnInit {
 				this.showContent = false;
 			}
 		});
+
+		this.imageBaieOne = this.imagesBaieService.getImagesBaieOne();
+		this.imageBaieTwo = this.imagesBaieService.getImagesBaieTwo();
+		this.imageBaieThree = this.imagesBaieService.getImagesBaieThree();
 	}
 
 	showBaieOne(route: string) {

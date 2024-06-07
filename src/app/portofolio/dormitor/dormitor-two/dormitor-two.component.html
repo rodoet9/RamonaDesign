@@ -13,22 +13,11 @@
 				</ul>
 			</div>
 		</div>
-		<img src="../../../assets/Dormitor/D2/Dormitor2-1.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img src="../../../assets/Dormitor/D2/Dormitor2-2.jpeg" />
 	</div>
 </div>
 
 <div class="row">
 	<div class="col-12">
-		<img src="../../../assets/Dormitor/D2/Dormitor2-4.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img src="../../../assets/Dormitor/D2/Dormitor2-5.jpeg" />
+		<img *ngFor="let url of imgDormitorTwoUrls" [src]="url" />
 	</div>
 </div>

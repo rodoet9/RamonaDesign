@@ -13,36 +13,10 @@
 				</ul>
 			</div>
 		</div>
-		<img src="../../../../assets/Birou/B2/Birou2-1.jpeg" />
 	</div>
 </div>
 <div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/Birou/B2/Birou2-2.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/Birou/B2/Birou2-3.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/Birou/B2/Birou2-4.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/Birou/B2/Birou2-5.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/Birou/B2/Birou2-6.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/Birou/B2/Birou2-7.jpeg" />
+	<div class="col-12" *ngFor="let url of imgBirouTwoUrls">
+		<img [src]="url" />
 	</div>
 </div>

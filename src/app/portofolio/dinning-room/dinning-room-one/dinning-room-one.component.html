@@ -13,26 +13,10 @@
 				</ul>
 			</div>
 		</div>
-		<img src="../../../../assets/DinningRoom/D1/DinningRoom1-1.jpeg" />
 	</div>
 </div>
 <div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/DinningRoom/D1/DinningRoom1-2.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/DinningRoom/D1/DinningRoom1-3.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/DinningRoom/D1/DinningRoom1-4.jpeg" />
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<img src="../../../../assets/DinningRoom/D1/DinningRoom1-5.jpeg" />
+	<div class="col-12" *ngFor="let url of imgDinningRoomOneUrls">
+		<img [src]="url" />
 	</div>
 </div>

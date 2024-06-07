@@ -1,10 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ImagesDormitorService } from '../images-dormitor.service';
 
 @Component({
-  selector: 'app-dormitor-one',
-  templateUrl: './dormitor-one.component.html',
-  styleUrls: ['./dormitor-one.component.scss']
+	selector: 'app-dormitor-one',
+	templateUrl: './dormitor-one.component.html',
+	styleUrls: ['./dormitor-one.component.scss'],
 })
-export class DormitorOneComponent {
+export class DormitorOneComponent implements OnInit {
+	public imgDormitorOneUrls: string[] = [];
 
+	constructor(private imagesDormitorService: ImagesDormitorService) {}
+
+	ngOnInit() {
+		this.imgDormitorOneUrls = this.imagesDormitorService.getImagesDormitorOne();
+	}
 }

@@ -20,8 +20,6 @@
 		}
 
 		img {
-			width: 100%;
-			height: auto;
 			margin-bottom: 12px;
 			border-radius: 8px;
 		}
@@ -174,11 +172,17 @@
 					height: 60px;
 					background-color: #27272715;
 				}
+			}
+			.img-alignment {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
 
-				// img {
-				// 	width: 100%;
-				// 	height: auto;
-				// }
+				img {
+					width: 80%;
+					height: auto;
+				}
 			}
 		}
 	}
