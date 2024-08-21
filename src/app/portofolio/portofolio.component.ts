@@ -14,37 +14,37 @@ export class PortofolioComponent implements OnInit {
 	public imgPortofoliu = [
 		{
 			title: 'Idei de design dormitor',
-			url: 'https://rdesign.twic.pics/dormitor/DormitorPortofoliu.png',
+			url: '../../../../assets/Dormitor/DormitorPortofoliu.png',
 			category: 'dormitor',
 		},
 		{
 			title: 'Idei de design baie',
-			url: 'https://rdesign.twic.pics/baie/BaiePortofoliu.png',
+			url: '../../../../assets/Baie/BaiePortofoliu.png',
 			category: 'baie',
 		},
 		{
 			title: 'Idei de design birou',
-			url: 'https://rdesign.twic.pics/birou/BirouPortofoliu.png',
+			url: '../../../../assets/Birou/BirouPortofoliu.png',
 			category: 'birou',
 		},
 		{
 			title: 'Idei de design bucatarie',
-			url: 'https://rdesign.twic.pics/bucatarie/BucatariePortofoliu.png',
+			url: '../../../../assets/Bucatarie/BucatariePortofoliu.png',
 			category: 'bucatarie',
 		},
 		{
 			title: 'Idei de design dinning room',
-			url: 'https://rdesign.twic.pics/dinningroom/DinningAreaPortofoliu.png',
+			url: '../../../../assets/DinningRoom/DinningAreaPortofoliu.png',
 			category: 'dinning-room',
 		},
 		{
 			title: 'Idei de design living',
-			url: 'https://rdesign.twic.pics/living/LivingPortofoliu.png',
+			url: '../../../../assets/Living/LivingPortofoliu.png',
 			category: 'living',
 		},
 		{
 			title: 'Idei de design terasa',
-			url: 'https://rdesign.twic.pics/terasa/TerasaPortofoliu.png',
+			url: '../../../../assets/Terasa/TerasaPortofoliu.png',
 			category: 'terasa',
 		},
 	];

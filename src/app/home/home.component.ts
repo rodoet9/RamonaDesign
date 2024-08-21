@@ -11,20 +11,20 @@ export class HomeComponent implements OnInit {
 	typingStarted: boolean = false;
 
 	public imgHomeCarousel: string[] = [
-		'https://rdesign.twic.pics/homecarousel/img1.jpeg',
-		'https://rdesign.twic.pics/homecarousel/img2.jpeg',
-		'https://rdesign.twic.pics/homecarousel/img3.jpeg',
-		'https://rdesign.twic.pics/homecarousel/img4.jpeg',
-		'https://rdesign.twic.pics/homecarousel/img5.jpeg',
-		'https://rdesign.twic.pics/homecarousel/img6.jpeg',
-		'https://rdesign.twic.pics/homecarousel/img7.jpeg',
+		'assets/homeCarousel/img1.jpeg',
+		'assets/homeCarousel/img2.jpeg',
+		'assets/homeCarousel/img3.jpeg',
+		'assets/homeCarousel/img4.jpeg',
+		'assets/homeCarousel/img5.jpeg',
+		'assets/homeCarousel/img6.jpeg',
+		'assets/homeCarousel/img7.jpeg',
 	];
 
 	public homePics: string[] = [
-		'https://rdesign.twic.pics/homepics/HomeTransition.jpeg',
-		'https://rdesign.twic.pics/homepics/BaieCropped.jpeg',
-		'https://rdesign.twic.pics/homepics/BirouCropped.jpeg',
-		'https://rdesign.twic.pics/homepics/DormitorCropped.jpeg',
+		'assets/HomePics/HomeTransition.jpeg',
+		'assets/HomePics/BaieCropped.jpeg',
+		'assets/HomePics/BirouCropped.jpeg',
+		'assets/HomePics/DormitorCropped.jpeg',
 	];
 
 	constructor() {}

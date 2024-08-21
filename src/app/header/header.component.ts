@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
 	styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-	public logoNavbar: string =
-		'https://storage.googleapis.com/rdesign/assets/zoomed-in-logo-patrat-removebg-2.png';
+	public logoNavbar: string = '../../../../assets/zoomed-in-logo-patrat-removebg-2.png';
 }
