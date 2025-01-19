@@ -33,12 +33,12 @@ export class PortofolioComponent implements OnInit {
 			category: 'bucatarie',
 		},
 		{
-			title: 'Dinning room',
+			title: 'Dinning Area',
 			url: '../../../../assets/DinningRoom/DinningAreaPortofoliu.png',
 			category: 'dinning-room',
 		},
 		{
-			title: 'Livingroom',
+			title: 'Living room',
 			url: '../../../../assets/Living/LivingPortofoliu.png',
 			category: 'living',
 		},
