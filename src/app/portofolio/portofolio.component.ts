@@ -13,37 +13,37 @@ export class PortofolioComponent implements OnInit {
 
 	public imgPortofoliu = [
 		{
-			title: 'Idei de design dormitor',
+			title: 'Bedroom',
 			url: '../../../../assets/Dormitor/DormitorPortofoliu.png',
 			category: 'dormitor',
 		},
 		{
-			title: 'Idei de design baie',
+			title: 'Bathroom',
 			url: '../../../../assets/Baie/BaiePortofoliu.png',
 			category: 'baie',
 		},
 		{
-			title: 'Idei de design birou',
+			title: 'Office',
 			url: '../../../../assets/Birou/BirouPortofoliu.png',
 			category: 'birou',
 		},
 		{
-			title: 'Idei de design bucatarie',
+			title: 'Kitchen',
 			url: '../../../../assets/Bucatarie/BucatariePortofoliu.png',
 			category: 'bucatarie',
 		},
 		{
-			title: 'Idei de design dinning room',
+			title: 'Dinning room',
 			url: '../../../../assets/DinningRoom/DinningAreaPortofoliu.png',
 			category: 'dinning-room',
 		},
 		{
-			title: 'Idei de design living',
+			title: 'Livingroom',
 			url: '../../../../assets/Living/LivingPortofoliu.png',
 			category: 'living',
 		},
 		{
-			title: 'Idei de design terasa',
+			title: 'Terrace',
 			url: '../../../../assets/Terasa/TerasaPortofoliu.png',
 			category: 'terasa',
 		},
