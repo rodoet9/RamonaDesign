@@ -1,0 +1,20 @@
+<div class="row">
+	<div class="header">
+		<div class="title">
+			<h4>Blue Lagoon Kitchen</h4>
+		</div>
+		<div class="vertical-line"></div>
+		<div class="dimensions">
+			<h6>Dimensiuni: &nbsp;</h6>
+			<ul>
+				<li>Lungime: - m &nbsp;</li>
+				<li>Latime: - m</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div *ngFor="let url of imgBucatarieFourUrls" [ngClass]="isPortrait(url) ? 'col-6' : 'col-12'">
+		<img [src]="url" (load)="checkOrientation($event, url)" />
+	</div>
+</div>

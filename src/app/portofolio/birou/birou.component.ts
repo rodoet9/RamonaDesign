@@ -14,6 +14,7 @@ export class BirouComponent implements OnInit {
 
 	public imageBirouOne: string[] = [];
 	public imageBirouTwo: string[] = [];
+	public imageBirouThree: string[] = [];
 
 	constructor(
 		private route: ActivatedRoute,
@@ -31,6 +32,7 @@ export class BirouComponent implements OnInit {
 
 		this.imageBirouOne = this.imagesBirouService.getImagesBirouOne();
 		this.imageBirouTwo = this.imagesBirouService.getImagesBirouTwo();
+		this.imageBirouThree = this.imagesBirouService.getImagesBirouThree();
 	}
 
 	showBirouOne(route: string) {
@@ -39,6 +41,11 @@ export class BirouComponent implements OnInit {
 	}
 
 	showBirouTwo(route: string) {
+		this.showContent = true;
+		this.router.navigate(['/portofolio/birou', route]);
+	}
+
+	showBirouThree(route: string) {
 		this.showContent = true;
 		this.router.navigate(['/portofolio/birou', route]);
 	}

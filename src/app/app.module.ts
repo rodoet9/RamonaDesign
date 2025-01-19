@@ -67,6 +67,9 @@ import { BirouTwoComponent } from './portofolio/birou/birou-two/birou-two.compon
 import { BucatarieThreeComponent } from './portofolio/bucatarie/bucatarie-three/bucatarie-three.component';
 import { DinningRoomThreeComponent } from './portofolio/dinning-room/dinning-room-three/dinning-room-three.component';
 import { DormitorFourComponent } from './portofolio/dormitor/dormitor-four/dormitor-four.component';
+import { BaieFourComponent } from './portofolio/baie/baie-four/baie-four.component';
+import { BirouThreeComponent } from './portofolio/birou/birou-three/birou-three.component';
+import { BucatarieFourComponent } from './portofolio/bucatarie/bucatarie-four/bucatarie-four.component';
 
 @NgModule({
 	declarations: [
@@ -108,6 +111,9 @@ import { DormitorFourComponent } from './portofolio/dormitor/dormitor-four/dormi
 		BucatarieThreeComponent,
 		DinningRoomThreeComponent,
 		DormitorFourComponent,
+  BaieFourComponent,
+  BirouThreeComponent,
+  BucatarieFourComponent,
 	],
 	imports: [
 		MatTabsModule,

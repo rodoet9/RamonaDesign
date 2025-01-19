@@ -21,6 +21,16 @@ export class ImagesBucatarieService {
 		'../../../../assets/Bucatarie/B3/Bucatarie3-2.jpeg',
 		'../../../../assets/Bucatarie/B3/Bucatarie3-3.jpeg',
 	];
+
+	private imagesBucatarieFourUrls: string[] = [
+		'../../../../assets/Bucatarie/B4/Bucatarie4-1.jpg',
+		'../../../../assets/Bucatarie/B4/Bucatarie4-2.jpg',
+		'../../../../assets/Bucatarie/B4/Bucatarie4-3.jpg',
+		'../../../../assets/Bucatarie/B4/Bucatarie4-4.jpg',
+		'../../../../assets/Bucatarie/B4/Bucatarie4-5.jpg',
+		'../../../../assets/Bucatarie/B4/Bucatarie4-6.jpg',
+		'../../../../assets/Bucatarie/B4/Bucatarie4-7.jpg',
+	];
 	constructor() {}
 
 	getImagesBucatarieOne(): string[] {
@@ -33,5 +43,9 @@ export class ImagesBucatarieService {
 
 	getImagesBucatarieThree(): string[] {
 		return this.imagesBucatarieThreeUrls;
+	}
+
+	getImagesBucatarieFour(): string[] {
+		return this.imagesBucatarieFourUrls;
 	}
 }

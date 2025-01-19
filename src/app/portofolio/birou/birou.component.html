@@ -19,6 +19,15 @@
 				</a>
 			</div>
 		</div>
+
+		<div class="row" *ngIf="!showContent">
+			<div class="col-6">
+				<h5>Blue Lagoon Office</h5>
+				<a (click)="showBirouThree('birou-three')">
+					<img [src]="imageBirouThree[13]" />
+				</a>
+			</div>
+		</div>
 		<div class="row" *ngIf="showContent">
 			<div class="col-12">
 				<span (click)="hideContent()">Inapoi la idei de birouri</span>

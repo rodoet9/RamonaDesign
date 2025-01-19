@@ -26,6 +26,15 @@ export class ImagesBaieService {
 		'../../../../assets/Baie/B3/Baie3-6.jpeg',
 	];
 
+	private imagesBaieFourUrls: string[] = [
+		'../../../../assets/Baie/B4/Baie4-1.jpg',
+		'../../../../assets/Baie/B4/Baie4-2.jpg',
+		'../../../../assets/Baie/B4/Baie4-3.jpg',
+		'../../../../assets/Baie/B4/Baie4-4.jpg',
+		'../../../../assets/Baie/B4/Baie4-5.jpg',
+		'../../../../assets/Baie/B4/BaieCover.jpg',
+	];
+
 	constructor() {}
 
 	getImagesBaieOne(): string[] {
@@ -38,5 +47,8 @@ export class ImagesBaieService {
 
 	getImagesBaieThree(): string[] {
 		return this.imagesBaieThreeUrls;
+	}
+	getImagesBaieFour(): string[] {
+		return this.imagesBaieFourUrls;
 	}
 }

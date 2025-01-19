@@ -31,6 +31,9 @@ import { BirouTwoComponent } from './portofolio/birou/birou-two/birou-two.compon
 import { BucatarieThreeComponent } from './portofolio/bucatarie/bucatarie-three/bucatarie-three.component';
 import { DinningRoomThreeComponent } from './portofolio/dinning-room/dinning-room-three/dinning-room-three.component';
 import { DormitorFourComponent } from './portofolio/dormitor/dormitor-four/dormitor-four.component';
+import { BaieFourComponent } from './portofolio/baie/baie-four/baie-four.component';
+import { BirouThreeComponent } from './portofolio/birou/birou-three/birou-three.component';
+import { BucatarieFourComponent } from './portofolio/bucatarie/bucatarie-four/bucatarie-four.component';
 
 const routes: Routes = [
 	{
@@ -95,6 +98,11 @@ const routes: Routes = [
 						component: BaieThreeComponent,
 						title: 'Baie 3',
 					},
+					{
+						path: 'baie-four',
+						component: BaieFourComponent,
+						title: 'Baie 4',
+					},
 				],
 			},
 			{
@@ -111,6 +119,11 @@ const routes: Routes = [
 						path: 'birou-two',
 						component: BirouTwoComponent,
 						title: 'Birou 2',
+					},
+					{
+						path: 'birou-three',
+						component: BirouThreeComponent,
+						title: 'Birou 3',
 					},
 				],
 			},
@@ -130,6 +143,7 @@ const routes: Routes = [
 						title: 'Bucatarie 2',
 					},
 					{ path: 'bucatarie-three', component: BucatarieThreeComponent, title: 'Bucatarie 3' },
+					{ path: 'bucatarie-four', component: BucatarieFourComponent, title: 'Bucatarie 4' },
 				],
 			},
 			{

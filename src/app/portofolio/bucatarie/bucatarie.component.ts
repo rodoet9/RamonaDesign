@@ -15,6 +15,7 @@ export class BucatarieComponent implements OnInit {
 	public imageBucatarieOne: string[] = [];
 	public imageBucatarieTwo: string[] = [];
 	public imageBucatarieThree: string[] = [];
+	public imageBucatarieFour: string[] = [];
 
 	constructor(
 		private route: ActivatedRoute,
@@ -33,6 +34,7 @@ export class BucatarieComponent implements OnInit {
 		this.imageBucatarieOne = this.imagesBucatarieService.getImagesBucatarieOne();
 		this.imageBucatarieTwo = this.imagesBucatarieService.getImagesBucatarieTwo();
 		this.imageBucatarieThree = this.imagesBucatarieService.getImagesBucatarieThree();
+		this.imageBucatarieFour = this.imagesBucatarieService.getImagesBucatarieFour();
 	}
 
 	showBucatarieOne(route: string) {
@@ -44,6 +46,10 @@ export class BucatarieComponent implements OnInit {
 		this.router.navigate(['/portofolio/bucatarie', route]);
 	}
 	showBucatarieThree(route: string) {
+		this.showContent = true;
+		this.router.navigate(['/portofolio/bucatarie', route]);
+	}
+	showBucatarieFour(route: string) {
 		this.showContent = true;
 		this.router.navigate(['/portofolio/bucatarie', route]);
 	}

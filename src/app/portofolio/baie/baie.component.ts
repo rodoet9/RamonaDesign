@@ -15,6 +15,7 @@ export class BaieComponent implements OnInit {
 	public imageBaieOne: string[] = [];
 	public imageBaieTwo: string[] = [];
 	public imageBaieThree: string[] = [];
+	public imageBaieFour: string[] = [];
 
 	constructor(
 		private route: ActivatedRoute,
@@ -33,6 +34,7 @@ export class BaieComponent implements OnInit {
 		this.imageBaieOne = this.imagesBaieService.getImagesBaieOne();
 		this.imageBaieTwo = this.imagesBaieService.getImagesBaieTwo();
 		this.imageBaieThree = this.imagesBaieService.getImagesBaieThree();
+		this.imageBaieFour = this.imagesBaieService.getImagesBaieFour();
 	}
 
 	showBaieOne(route: string) {
@@ -45,6 +47,11 @@ export class BaieComponent implements OnInit {
 	}
 
 	showBaieThree(route: string) {
+		this.showContent = true;
+		this.router.navigate(['/portofolio/baie', route]);
+	}
+
+	showBaieFour(route: string) {
 		this.showContent = true;
 		this.router.navigate(['/portofolio/baie', route]);
 	}
